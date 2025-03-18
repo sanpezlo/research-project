@@ -1,0 +1,12 @@
+MANUAL
+
+cambiar nombre de las variables
+cambiar orden de declaracion de variables
+cambiar de ascendente a descendente (si se puede), aveces se borra el i, sino se establece el i = n
+cambiar operador logico del while ("<" - "<=") o (">" - ">=")
+cambiar valores iniciales de variables (si se puede)
+
+AUTOMATICO
+
+expandir codigo (++, --, +=, -=, ...)
+cambiar el nombre de las funciones

@@ -19,4 +19,8 @@ tests.push(test(6, 720));
 tests.push(test(0, 1));
 tests.push(test(1, 1));
 
-console.log(tests.every(Boolean));
+if (!tests.every(Boolean)) {
+  console.log(tests);
+} else {
+  console.log("All tests pass");
+}
