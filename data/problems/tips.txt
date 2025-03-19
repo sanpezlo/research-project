@@ -10,3 +10,7 @@ AUTOMATICO
 
 expandir codigo (++, --, +=, -=, ...)
 cambiar el nombre de las funciones
+
+POR PROBAR
+
+cambiar nombre del parametro
