@@ -4,7 +4,7 @@ Write a JavaScript function that returns the average of an array of numbers usin
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -20,7 +20,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -36,7 +36,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -52,7 +52,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -68,7 +68,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -84,7 +84,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -100,7 +100,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -116,7 +116,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -132,7 +132,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -148,7 +148,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -164,7 +164,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -180,7 +180,7 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
-  if (numbers.length === 0) {
+  if (numbers.length == 0) {
     return null;
   }
 
@@ -196,7 +196,7 @@ function average(numbers) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -212,7 +212,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -228,7 +228,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -244,7 +244,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -260,7 +260,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -276,7 +276,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -292,7 +292,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -308,7 +308,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -324,7 +324,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -340,7 +340,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -356,7 +356,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
@@ -372,7 +372,7 @@ function average(n) {
 
 ```js
 function average(n) {
-  if (n.length === 0) {
+  if (n.length == 0) {
     return null;
   }
 
