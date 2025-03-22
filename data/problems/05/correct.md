@@ -4,6 +4,10 @@ Write a JavaScript function that returns the average of an array of numbers usin
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let sum = 0;
   let i = 0;
   while (i < numbers.length) {
@@ -16,6 +20,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let sum = 0;
   let i = 0;
   while (i <= numbers.length - 1) {
@@ -28,6 +36,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let sum = 0;
   let i = 1;
   while (i <= numbers.length) {
@@ -40,6 +52,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let sum = 0;
   let i = 0;
   while (i < numbers.length) {
@@ -52,6 +68,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let sum = 0;
   let i = 0;
   while (i <= numbers.length - 1) {
@@ -64,6 +84,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let sum = 0;
   let i = 1;
   while (i <= numbers.length) {
@@ -76,6 +100,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let i = 0;
   let sum = 0;
   while (i < numbers.length) {
@@ -88,6 +116,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let i = 0;
   let sum = 0;
   while (i <= numbers.length - 1) {
@@ -100,6 +132,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let i = 1;
   let sum = 0;
   while (i <= numbers.length) {
@@ -112,6 +148,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let i = 0;
   let sum = 0;
   while (i < numbers.length) {
@@ -124,6 +164,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let i = 0;
   let sum = 0;
   while (i <= numbers.length - 1) {
@@ -136,6 +180,10 @@ function average(numbers) {
 
 ```js
 function average(numbers) {
+  if (numbers.length === 0) {
+    return null;
+  }
+
   let i = 1;
   let sum = 0;
   while (i <= numbers.length) {
@@ -148,6 +196,10 @@ function average(numbers) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let result = 0;
   let index = 0;
   while (index < n.length) {
@@ -160,6 +212,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let result = 0;
   let index = 0;
   while (index <= n.length - 1) {
@@ -172,6 +228,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let result = 0;
   let index = 1;
   while (index <= n.length) {
@@ -184,6 +244,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let avg = 0;
   let index = 0;
   while (index < n.length) {
@@ -196,6 +260,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let avg = 0;
   let index = 0;
   while (index <= n.length - 1) {
@@ -208,6 +276,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let result = 0;
   let index = 1;
   while (index <= n.length) {
@@ -220,6 +292,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let index = 0;
   let result = 0;
   while (index < n.length) {
@@ -232,6 +308,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let index = 0;
   let result = 0;
   while (index <= n.length - 1) {
@@ -244,6 +324,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let index = 1;
   let result = 0;
   while (index <= n.length) {
@@ -256,6 +340,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let index = 0;
   let avg = 0;
   while (index < n.length) {
@@ -268,6 +356,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let index = 0;
   let avg = 0;
   while (index <= n.length - 1) {
@@ -280,6 +372,10 @@ function average(n) {
 
 ```js
 function average(n) {
+  if (n.length === 0) {
+    return null;
+  }
+
   let index = 1;
   let result = 0;
   while (index <= n.length) {
