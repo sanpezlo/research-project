@@ -1,5 +1,5 @@
 ---
-Write a JavaScript function that returns the average of an array of n using a "while" loop.
+Write a JavaScript function that returns the smallest number from an array of numbers using a "while" loop.
 ---
 
 ```js
