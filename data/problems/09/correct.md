@@ -7,6 +7,54 @@ function oddNumbers(n) {
   let result = [];
   let i = 1;
   while (i <= n) {
+    result.push(i);
+    i += 2;
+  }
+  return result;
+}
+```
+
+```js
+function oddNumbers(n) {
+  let result = [];
+  let i = 1;
+  while (i < n + 1) {
+    result.push(i);
+    i += 2;
+  }
+  return result;
+}
+```
+
+```js
+function oddNumbers(n) {
+  const result = [];
+  let i = 1;
+  while (i <= n) {
+    result.push(i);
+    i += 2;
+  }
+  return result;
+}
+```
+
+```js
+function oddNumbers(n) {
+  const result = [];
+  let i = 1;
+  while (i < n + 1) {
+    result.push(i);
+    i += 2;
+  }
+  return result;
+}
+```
+
+```js
+function oddNumbers(n) {
+  let result = [];
+  let i = 1;
+  while (i <= n) {
     if (i % 2 !== 0) {
       result.push(i);
     }
@@ -335,6 +383,54 @@ function oddNumbers(n) {
     i++;
   }
   return result;
+}
+```
+
+```js
+function oddNumbers(N) {
+  let odds = [];
+  let count = 1;
+  while (count <= N) {
+    odds.push(count);
+    count += 2;
+  }
+  return odds;
+}
+```
+
+```js
+function oddNumbers(N) {
+  let odds = [];
+  let count = 1;
+  while (count < N + 1) {
+    odds.push(count);
+    count += 2;
+  }
+  return odds;
+}
+```
+
+```js
+function oddNumbers(N) {
+  const odds = [];
+  let count = 1;
+  while (count <= N) {
+    odds.push(count);
+    count += 2;
+  }
+  return odds;
+}
+```
+
+```js
+function oddNumbers(N) {
+  const odds = [];
+  let count = 1;
+  while (count < N + 1) {
+    odds.push(count);
+    count += 2;
+  }
+  return odds;
 }
 ```
 
