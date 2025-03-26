@@ -1,6 +1,6 @@
 MANUAL
 
-cambiar nombre de las variables
+cambiar nombre de las variables y del parametro
 cambiar orden de declaracion de variables
 cambiar de ascendente a descendente (si se puede), aveces se borra el i, sino se establece el i = n
 cambiar operador logico del while ("<" - "<=") o (">" - ">=")
@@ -12,6 +12,6 @@ AUTOMATICO
 expandir codigo (++, --, +=, -=, ...)
 cambiar el nombre de las funciones
 
-POR PROBAR
+POR HACER
 
-cambiar nombre del parametro
+TODO: comentario
