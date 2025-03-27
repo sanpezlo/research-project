@@ -1,3 +1,3 @@
 #!/bin/bash
 python scripts/main.py
-node data/problems/23/all.js
+node data/problems/24/all.js
