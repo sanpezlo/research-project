@@ -3,7 +3,7 @@ from md import read
 from gen_code import gen
 from gen_tests import read_lines, gen_tests, write_lines
 
-id_problem = "30"
+id_problem = "31"
 
 def dataframe():
     md = read(f"/workspaces/research-project/data/problems/{id_problem}/correct.md")

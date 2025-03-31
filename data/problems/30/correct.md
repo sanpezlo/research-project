@@ -2,6 +2,8 @@
 Write a JavaScript function that given a string returns it without vowels using a "while" loop.
 ---
 
+TODO: Cambiar operador logico del while ("<" - "<=") o (">" - ">=")
+
 ```js
 function removeVowels(str) {
   let result = "",
