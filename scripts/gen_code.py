@@ -32,5 +32,5 @@ def change_functio_name(code: str, new_name: str):
 
 def gen(codes: list[str], new_functio_name: str):
     codes += [expand_code(code) for code in codes]
-    codes += [change_functio_name(code, new_functio_name) for code in codes]
+    # codes += [change_functio_name(code, new_functio_name) for code in codes]
     return codes
