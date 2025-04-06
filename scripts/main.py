@@ -20,17 +20,17 @@ def write_tests(id_problem, type):
     md = read(
         f"/workspaces/research-project/data/problems/{id_problem}/{type}.md")
     tests_lines = read_lines(
-        f"/workspaces/research-project/data/problems/{id_problem}/{"tests" if type == "correct" else "error"}.js")
+        f"/workspaces/research-project/tests/{id_problem}/{"tests" if type == "correct" else "error"}.js")
     tests = gen_tests(tests_lines, md["codes"])
     write_lines(
-        f"/workspaces/research-project/data/problems/{id_problem}/{type}.js", tests)
+        f"/workspaces/research-project/tests/{id_problem}/_{type}.js", tests)
 
 
 def run_tests(id_problem, type):
     write_tests(id_problem, type)
 
     correct = subprocess.Popen(
-        ["node", f"/workspaces/research-project/data/problems/{id_problem}/{type}.js"], stdout=subprocess.PIPE).stdout.read().decode().strip()
+        ["node", f"/workspaces/research-project/tests/{id_problem}/_{type}.js"], stdout=subprocess.PIPE).stdout.read().decode().strip()
 
     if correct == "":
         return f"{type}: All tests passed."

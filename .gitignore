@@ -176,3 +176,7 @@ cython_debug/
 */**/all.js
 */**/initial.js
 */**/correct.js
+
+*/**/_all.js
+*/**/_initial.js
+*/**/_correct.js
