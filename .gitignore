@@ -174,3 +174,5 @@ cython_debug/
 .pypirc
 
 */**/all.js
+*/**/initial.js
+*/**/correct.js
