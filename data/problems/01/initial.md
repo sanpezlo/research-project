@@ -3,6 +3,10 @@ Write a JavaScript function that returns the factorial of a number using a "whil
 ---
 
 ```initial
+  let result = -1;
+```
+
+```initial
   let result = 0;
 ```
 
