@@ -30,7 +30,7 @@ def run_tests(id_problem, type):
     write_tests(id_problem, type)
 
     correct = subprocess.Popen(
-        ["node", f"/workspaces/research-project/tests/{id_problem}/_{type}.js"], stdout=subprocess.PIPE).stdout.read().decode().strip()
+        ["node", f"/workspaces/research-project/tests/{id_problem}/_{type}.js"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT).stdout.read().decode().strip()
 
     if correct == "":
         return f"{type}: All tests passed."
@@ -121,6 +121,8 @@ def window_tests_by_id(id):
         tests = []
         tests.append(run_tests(id, "correct"))
         tests.append(run_tests(id, "initial"))
+        # tests.append(run_tests(id, "transform"))
+        # tests.append(run_tests(id, "final"))
         result = "\n".join(tests)
 
     def choices(choice):
