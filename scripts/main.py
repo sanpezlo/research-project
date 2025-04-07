@@ -121,8 +121,8 @@ def window_tests_by_id(id):
         tests = []
         tests.append(run_tests(id, "correct"))
         tests.append(run_tests(id, "initial"))
-        # tests.append(run_tests(id, "transform"))
-        # tests.append(run_tests(id, "final"))
+        tests.append(run_tests(id, "transformation"))
+        tests.append(run_tests(id, "final"))
         result = "\n".join(tests)
 
     def choices(choice):

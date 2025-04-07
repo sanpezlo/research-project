@@ -3,67 +3,37 @@ Write a JavaScript function that returns the factorial of a number using a "whil
 ---
 
 ```initial
-  let result = -1;
+  let result = 1;
   let i = 1;
 ```
 
 ```initial
   let i = 1;
-  let result = -1;
+  let result = 1;
 ```
 
 ```initial
-  let result = -1;
+  let result = 1;
   let i = 2;
 ```
 
 ```initial
   let i = 2;
-  let result = -1;
-```
-
-```initial
-  let result = 0;
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  let result = 0;
-```
-
-```initial
-  let result = 0;
-  let i = 2;
-```
-
-```initial
-  let i = 2;
-  let result = 0;
-```
-
-```initial
-  let result = 2;
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  let result = 2;
-```
-
-```initial
-  let result = 2;
-  let i = 2;
-```
-
-```initial
-  let i = 2;
-  let result = 2;
+  let result = 1;
 ```
 
 ```transformation
-    result *= i;
+    result += i;
+    i++;
+```
+
+```transformation
+    result -= i;
+    i++;
+```
+
+```transformation
+    result /= i;
     i++;
 ```
 
@@ -122,37 +92,27 @@ function factorial(n) {
 ===
 
 ```initial
-  let result = -1;
+  let result = 1;
   let i = n;
 ```
 
 ```initial
   let i = n;
-  let result = -1;
-```
-
-```initial
-  let result = 0;
-  let i = n;
-```
-
-```initial
-  let i = n;
-  let result = 0;
-```
-
-```initial
-  let result = 2;
-  let i = n;
-```
-
-```initial
-  let i = n;
-  let result = 2;
+  let result = 1;
 ```
 
 ```transformation
-    result *= i;
+    result += i;
+    i--;
+```
+
+```transformation
+    result -= i;
+    i--;
+```
+
+```transformation
+    result /= i;
     i--;
 ```
 
@@ -211,19 +171,21 @@ function factorial(n) {
 ===
 
 ```initial
-  let result = -1;
-```
-
-```initial
-  let result = 0;
-```
-
-```initial
-  let result = 2;
+  let result = 1;
 ```
 
 ```transformation
-    result *= n;
+    result += n;
+    n--;
+```
+
+```transformation
+    result -= n;
+    n--;
+```
+
+```transformation
+    result /= n;
     n--;
 ```
 
@@ -298,37 +260,47 @@ function factorial(n) {
 ===
 
 ```initial
-  let result = -1;
+  let result = 1;
   let i = 0;
 ```
 
 ```initial
   let i = 0;
-  let result = -1;
-```
-
-```initial
-  let result = 0;
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  let result = 0;
-```
-
-```initial
-  let result = 2;
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  let result = 2;
+  let result = 1;
 ```
 
 ```transformation
-    result *= i + 1;
+    result *= i;
+    i++;
+```
+
+```transformation
+    result += i + 1;
+    i++;
+```
+
+```transformation
+    result += i ;
+    i++;
+```
+
+```transformation
+    result -= i + 1;
+    i++;
+```
+
+```transformation
+    result -= i;
+    i++;
+```
+
+```transformation
+    result /= i + 1;
+    i++;
+```
+
+```transformation
+    result /= i;
     i++;
 ```
 
