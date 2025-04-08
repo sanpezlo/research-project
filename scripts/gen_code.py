@@ -32,7 +32,18 @@ def change_functio_name(code: str, new_name: str):
     return re.sub(r"\bfunction\s+(\w+)\s*\(", f"function {new_name}(", code)
 
 
-def gen(codes: list[str], new_functio_name: str):
-    codes += [expand_code(code) for code in codes]
-    # codes += [change_functio_name(code, new_functio_name) for code in codes]
-    return codes
+def gen(functions: list[str], new_functio_name: str):
+    new_functions = []
+
+    for function in functions:
+        clean = re.sub(
+            r'#\(ignore-test\)', '', function, flags=re.MULTILINE)
+        clean = re.sub(r'\n\s*\n', '\n', clean)
+        new_functions.append(clean)
+
+    new_functions += [expand_code(function) for function in new_functions]
+
+    # new_functions += [change_functio_name(function, new_functio_name)
+    #                   for function in new_functions]
+
+    return new_functions

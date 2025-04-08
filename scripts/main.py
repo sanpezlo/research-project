@@ -75,6 +75,7 @@ def main():
 
     def choices(choice):
         if choice == "1":
+            dataframe("01")
             return True
         elif choice == "2":
             window_tests()
