@@ -107,7 +107,3 @@ Agregar `#(ignore-test)` en `final` de todas.
 Cambiar de `<` a `>` o `<=` a `>=` y viceversa.
 
 Duplicar las soluciones y cambiar de `<` a `<=` o `>` a `>=` y viceversa.
-
-```
-
-```

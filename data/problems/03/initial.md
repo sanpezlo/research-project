@@ -3,503 +3,276 @@ Write a JavaScript function that returns in an array the numbers from 1 to N usi
 ---
 
 ```initial
-  let numbers = [0];
-```
-
-```initial
   let numbers = [n];
-```
-
-```js
-function count(n) {
   let i = 1;
-  while (i <= n) {
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
 ```
-
-```js
-function count(n) {
-  let i = 1;
-  while (i < n + 1) {
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (i <= n) {
-    numbers = numbers.concat([i]);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (i < n + 1) {
-    numbers = numbers.concat([i]);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (true) {
-    if (i > n) {
-      break;
-    }
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (true) {
-    if (i >= n + 1) {
-      break;
-    }
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 0;
-  while (i < n) {
-    i++;
-    numbers.push(i);
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 0;
-  while (i <= n - 1) {
-    i++;
-    numbers.push(i);
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (i <= n) {
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (i < n + 1) {
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (i <= n) {
-    numbers = numbers.concat([i]);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (i < n + 1) {
-    numbers = numbers.concat([i]);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (true) {
-    if (i > n) {
-      break;
-    }
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 1;
-  while (true) {
-    if (i >= n + 1) {
-      break;
-    }
-    numbers.push(i);
-    i++;
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 0;
-  while (i < n) {
-    i++;
-    numbers.push(i);
-  }
-  return numbers;
-}
-```
-
-```js
-function count(n) {
-  let i = 0;
-  while (i <= n - 1) {
-    i++;
-    numbers.push(i);
-  }
-  return numbers;
-}
-```
-
-===
 
 ```initial
-  const numbers = [0];
+  let i = 1;
+  let numbers = [n];
 ```
 
 ```initial
   const numbers = [n];
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  const numbers = [n];
+```
+
+```initial
+  let numbers = [0];
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  let numbers = [0];
+```
+
+```initial
+  const numbers = [0];
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  const numbers = [0];
+```
+
+```transformation
+    numbers.push(i);
+    i++;
+```
+
+```final
+  return numbers;
 ```
 
 ```js
 function count(n) {
-  let i = 1;
   while (i <= n) {
-    numbers.push(i);
-    i++;
+    //
   }
-  return numbers;
 }
 ```
 
 ```js
 function count(n) {
-  let i = 1;
   while (i < n + 1) {
-    numbers.push(i);
-    i++;
+    //
   }
-  return numbers;
 }
 ```
 
 ```js
 function count(n) {
-  let i = 1;
-  while (i <= n) {
-    numbers.push(i);
-    i++;
+  while (i - 1 < n) {
+    //
   }
-  return numbers;
 }
 ```
 
 ```js
 function count(n) {
-  let i = 1;
-  while (i < n + 1) {
-    numbers.push(i);
-    i++;
+  while (n >= i) {
+    //
   }
-  return numbers;
+}
+```
+
+```js
+function count(n) {
+  while (n + 1 > i) {
+    //
+  }
+}
+```
+
+```js
+function count(n) {
+  while (n > i - 1) {
+    //
+  }
 }
 ```
 
 ===
 
 ```initial
-  let result = [0];
+  let numbers = [n];
+  let i = 1;
 ```
 
 ```initial
-  let result = [N];
+  let i = 1;
+  let numbers = [n];
+```
+
+```initial
+  let numbers = [0];
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  let numbers = [0];
+```
+
+```transformation
+    numbers = numbers.concat([i]);
+    i++;
+```
+
+```final
+  return numbers;
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count <= N) {
-    result.push(count);
-    count++;
+function count(n) {
+  while (i <= n) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count < N + 1) {
-    result.push(count);
-    count++;
+function count(n) {
+  while (i < n + 1) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count <= N) {
-    result = result.concat([count]);
-    count++;
+function count(n) {
+  while (i - 1 < n) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count < N + 1) {
-    result = result.concat([count]);
-    count++;
+function count(n) {
+  while (n >= i) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (true) {
-    if (count > N) {
-      break;
-    }
-    result.push(count);
-    count++;
+function count(n) {
+  while (n + 1 > i) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (true) {
-    if (count >= N + 1) {
-      break;
-    }
-    result.push(count);
-    count++;
+function count(n) {
+  while (n > i - 1) {
+    //
   }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 0;
-  while (count < N) {
-    count++;
-    result.push(count);
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 0;
-  while (count <= N - 1) {
-    count++;
-    result.push(count);
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 1;
-  while (count <= N) {
-    result.push(count);
-    count++;
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 1;
-  while (count < N + 1) {
-    result.push(count);
-    count++;
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 1;
-  while (count <= N) {
-    result = result.concat([count]);
-    count++;
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 1;
-  while (count < N + 1) {
-    result = result.concat([count]);
-    count++;
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 1;
-  while (true) {
-    if (count > N) {
-      break;
-    }
-    result.push(count);
-    count++;
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 1;
-  while (true) {
-    if (count >= N + 1) {
-      break;
-    }
-    result.push(count);
-    count++;
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 0;
-  while (count < N) {
-    count++;
-    result.push(count);
-  }
-  return result;
-}
-```
-
-```js
-function count(N) {
-  let count = 0;
-  while (count <= N - 1) {
-    count++;
-    result.push(count);
-  }
-  return result;
 }
 ```
 
 ===
 
 ```initial
-  const result = [0];
+  let numbers = [n];
+  let i = 0;
 ```
 
 ```initial
-  const result = [N];
+  let i = 0;
+  let numbers = [n];
+```
+
+```initial
+  const numbers = [n];
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  const numbers = [n];
+```
+
+```initial
+  let numbers = [0];
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let numbers = [0];
+```
+
+```initial
+  const numbers = [0];
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  const numbers = [0];
+```
+
+```transformation
+    i++;
+    numbers.push(i);
+```
+
+```final
+  return numbers;
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count <= N) {
-    result.push(count);
-    count++;
+function count(n) {
+  while (i < n) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count < N + 1) {
-    result.push(count);
-    count++;
+function count(n) {
+  while (i <= n - 1) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count <= N) {
-    result.push(count);
-    count++;
+function count(n) {
+  while (i + 1 <= n) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function count(N) {
-  let count = 1;
-  while (count < N + 1) {
-    result.push(count);
-    count++;
+function count(n) {
+  while (n > i) {
+    //
   }
-  return result;
+}
+```
+
+```js
+function count(n) {
+  while (n - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function count(n) {
+  while (n >= i + 1) {
+    //
+  }
 }
 ```
