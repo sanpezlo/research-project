@@ -2,400 +2,784 @@
 Write a JavaScript function that returns the sum of the numbers from 1 to N using a "while" loop.
 ---
 
-```js
-function sum(n) {
+```initial
   let sum = 0;
   let i = 1;
-  while (i <= n) {
-    sum += i;
-    i++;
-  }
-  return sum;
-}
 ```
 
-```js
-function sum(n) {
-  let sum = 0;
-  let i = 0;
-  while (i < n) {
-    sum += i + 1;
-    i++;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let sum = 0;
-  while (n > 0) {
-    sum += n;
-    n--;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let sum = 0;
-  while (n >= 0) {
-    sum += n;
-    n--;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let sum = 0;
-  let i = n;
-  while (i > 0) {
-    sum += i;
-    i--;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let sum = 0;
-  let i = n;
-  while (i >= 0) {
-    sum += i;
-    i--;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
+```initial
   let i = 1;
   let sum = 0;
+```
+
+```initial
+  let sum = 0;
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let sum = 0;
+```
+
+```transformation
+    sum += i;
+    i++;
+```
+
+```final
+  return sum;
+```
+
+```js
+function sum(n) {
   while (i <= n) {
-    sum += i;
-    i++;
+    //
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let i = 0;
-  let sum = 0;
-  while (i < n) {
-    sum += i + 1;
-    i++;
+  while (i < n + 1) {
+    //
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let i = n;
-  let sum = 0;
-  while (i > 0) {
-    sum += i;
-    i--;
+  while (i - 1 < n) {
+    //
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let i = n;
-  let sum = 0;
-  while (i >= 0) {
-    sum += i;
-    i--;
+  while (n >= i) {
+    //
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let sum = 0;
-  let i = 0;
-  while (i < n) {
-    i++;
-    sum += i;
+  while (n + 1 > i) {
+    //
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
+  while (n > i - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   let sum = 0;
   let i = 0;
-  while (i <= n - 1) {
-    i++;
-    sum += i;
-  }
-  return sum;
-}
 ```
 
-```js
-function sum(n) {
-  let sum = 0;
-  let i = n + 1;
-  while (i > 0) {
-    i--;
-    sum += i;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let sum = 0;
-  let i = n + 1;
-  while (i >= 1) {
-    i--;
-    sum += i;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
+```initial
   let i = 0;
   let sum = 0;
-  while (i < n) {
+```
+
+```transformation
+    sum += i;
     i++;
-    sum += i;
-  }
+```
+
+```final
   return sum;
-}
 ```
 
 ```js
 function sum(n) {
-  let i = 0;
-  let sum = 0;
-  while (i <= n - 1) {
-    i++;
-    sum += i;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let i = n + 1;
-  let sum = 0;
-  while (i > 0) {
-    i--;
-    sum += i;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let i = n + 1;
-  let sum = 0;
-  while (i >= 1) {
-    i--;
-    sum += i;
-  }
-  return sum;
-}
-```
-
-```js
-function sum(n) {
-  let sum = 0;
-  let i = 0;
   while (true) {
-    sum += i;
-    i++;
+    //
     if (i > n) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let sum = 0;
-  let i = n;
   while (true) {
-    sum += i;
-    i--;
-    if (i < 1) {
+    //
+    if (n < i) {
       break;
     }
   }
+}
+```
+
+===
+
+```initial
+  let sum = 0;
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let sum = 0;
+```
+
+```transformation
+    sum += i + 1;
+    i++;
+```
+
+```final
   return sum;
+```
+
+```js
+function sum(n) {
+  while (i < n) {
+    //
+  }
 }
 ```
 
 ```js
 function sum(n) {
+  while (i <= n - 1) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i + 1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n > i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n >= i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   let sum = 0;
-  while (true) {
+```
+
+```transformation
     sum += n;
     n--;
-    if (n < 1) {
-      break;
-    }
-  }
+```
+
+```final
   return sum;
+```
+
+```js
+function sum(n) {
+  while (n) {
+    //
+  }
 }
 ```
 
 ```js
 function sum(n) {
-  let sum = 0;
-  let i = n;
-  while (true) {
-    sum += i;
-    i--;
-    if (i < 0) {
-      break;
-    }
+  while (n != 0) {
+    //
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let sum = 0;
+  while (n >= 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n > 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n >= 1) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 != n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 <= n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 < n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 <= n - 1) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
   while (true) {
-    sum += n;
-    n--;
+    //
     if (n < 0) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let sum = 0;
-  let i = n;
   while (true) {
-    sum += i;
-    i--;
-    if (i <= 0) {
+    //
+    if (n < 1) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let sum = 0;
   while (true) {
-    sum += n;
-    n--;
+    //
     if (n <= 0) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let i = 0;
-  let sum = 0;
   while (true) {
-    sum += i;
-    i++;
-    if (i > n) {
+    //
+    if (0 > n) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
+  while (true) {
+    //
+    if (1 > n) {
+      break;
+    }
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (true) {
+    //
+    if (0 >= n) {
+      break;
+    }
+  }
+}
+```
+
+===
+
+```initial
+  let sum = 0;
+  let i = n;
+```
+
+```initial
   let i = n;
   let sum = 0;
-  while (true) {
+```
+
+```transformation
     sum += i;
     i--;
+```
+
+```final
+  return sum;
+```
+
+```js
+function sum(n) {
+  while (i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i != 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i >= 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i > 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i >= 1) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 != i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 <= i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 < i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (1 <= i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 <= i - 1) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (true) {
+    //
     if (i < 1) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let i = n;
-  let sum = 0;
   while (true) {
-    sum += i;
-    i--;
+    //
     if (i < 0) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let i = n;
-  let sum = 0;
   while (true) {
-    sum += i;
-    i--;
+    //
     if (i <= 0) {
       break;
     }
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
+  while (true) {
+    //
+    if (1 > i) {
+      break;
+    }
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (true) {
+    //
+    if (0 > i) {
+      break;
+    }
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (true) {
+    //
+    if (0 >= i) {
+      break;
+    }
+  }
+}
+```
+
+===
+
+```initial
+  let sum = 0;
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let sum = 0;
+```
+
+```transformation
+    i++;
+    sum += i;
+```
+
+```final
+  return sum;
+```
+
+```js
+function sum(n) {
+  while (i < n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i <= n - 1) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i + 1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n > i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n >= i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let sum = 0;
+  let i = n + 1;
+```
+
+```initial
+  let i = n + 1;
+  let sum = 0;
+```
+
+```transformation
+    i--;
+    sum += i;
+```
+
+```final
+  return sum;
+```
+
+```js
+function sum(n) {
+  while (i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i != 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i > 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i >= 1) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (i - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 != i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 < i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (1 <= i) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 <= i - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   let sum = n;
+```
+
+```transformation
+    n--;
+    sum += n;
+```
+
+```final
+  return sum;
+```
+
+```js
+function sum(n) {
+  while (n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (n != 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
   while (n > 0) {
-    n--;
-    sum += n;
+    //
   }
-  return sum;
 }
 ```
 
 ```js
 function sum(n) {
-  let sum = n;
   while (n >= 1) {
-    n--;
-    sum += n;
+    //
   }
-  return sum;
+}
+```
+
+```js
+function sum(n) {
+  while (n - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 != n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 < n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function sum(n) {
+  while (0 <= n - 1) {
+    //
+  }
 }
 ```

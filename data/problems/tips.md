@@ -27,6 +27,10 @@ Cambiar valores iniciales de variables (si se puede)
 
 Agregar variables in-necesarias (de transformacion) ejem `count` (cuenta elementos del array) y `i` (index), son lo mismo
 
+===
+
+Agrupar por `transformation`, luego por `initial` y por `final`.
+
 ### initial
 
 ````
@@ -51,7 +55,11 @@ Cambiar la el valor de la iniciaion de variables, en algunos casos pasan todos l
 ```
 ````
 
-Cambiar el contenido del `while`.
+Contenido del `while`:
+
+- Borrar transformacion (si no genera un loop infinito).
+- Cambiar valorles del contenido del `while`, si es `sum += i` cambiar a `sum += n`.
+- Cambiar transformacion de operaciones, de `+=` a `-=`, `*=`, `/=` o cualquiera de las combinaciones.
 
 `======`
 
@@ -59,7 +67,8 @@ loop infinito
 
 agregar `#(ignore-test)` en `final` si son todas o en cada codigo.
 
-Añadir transformacion correcta y eliminar `i++;` o `i--;`
+- Añadir transformacion correcta (si era `+=` dejar `+=`) y eliminar `i++;` o `i--;`
+- Transformacion vacia
 
 ### final
 
@@ -77,19 +86,23 @@ Añadir transformacion correcta y eliminar `i++;` o `i--;`
 ```
 ````
 
-Cambiar valor de retorno.
-
-Borrar retorno.
+- Borrar retorno.
+- Cambiar valor de retorno.
 
 `======`
 
-Cambiar de `<` a `<=` o `>` a `>=` y viceversa, en algunos casos pasan todos los test, por lo que no es una solucion valida.
+Duplicar anterior
+
+- Colocar retorno correcto.
+- Cambiar de `<` a `<=` o `>` a `>=` y viceversa, en algunos casos pasan todos los test, por lo que no es una solucion valida.
 
 `======`
 
 loop infinito
 
-agregar `#(ignore-test)` en `final` si son todas o en cada codigo.
+Duplicar anterior
+
+Agregar `#(ignore-test)` en `final` de todas.
 
 Cambiar de `<` a `>` o `<=` a `>=` y viceversa.
 
