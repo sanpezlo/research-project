@@ -69,6 +69,8 @@ Contenido del `while`:
 
 loop infinito
 
+Duplicar anterior
+
 agregar `#(ignore-test)` en `final` si son todas o en cada codigo.
 
 - Añadir transformacion correcta (si era `+=` dejar `+=`) y eliminar `i++;` o `i--;`
@@ -97,6 +99,8 @@ agregar `#(ignore-test)` en `final` si son todas o en cada codigo.
 
 Duplicar anterior
 
+cambion en el `while`
+
 - Colocar retorno correcto.
 - Cambiar de `<` a `<=` o `>` a `>=` y viceversa, en algunos casos pasan todos los test, por lo que no es una solucion valida.
 
@@ -110,7 +114,7 @@ Agregar `#(ignore-test)` en `final` de todas.
 
 Cambiar de `<` a `>` o `<=` a `>=` y viceversa.
 
-Duplicar las soluciones y cambiar de `<` a `<=` o `>` a `>=` y viceversa.
+<!-- Duplicar las soluciones y cambiar de `<` a `<=` o `>` a `>=` y viceversa. -->
 
 ===
 
@@ -301,3 +305,15 @@ function average(numbers) {
 ```
 
 Sin embargo en el codigo anterior, el `return` es importante ya que el ciclo no realiza su proposito, solo suma los numeros, por lo que el `return` es necesario para que se calcule el promedio de los numeros.
+
+---
+
+TODO: el problema 4, en final, hay una seccion vacia, porque no hay errores finales posibles cambiando los operadores del while, por lo tanto a la hora de hacer las mezclas de los diferentes tipos de errores, deben verificar que no esten vacios.
+
+```
+===
+
+===
+```
+
+ejem (error initial con error final), al hacer esto sin verificar daria algunos con solo (error initial) y no combiandos.
