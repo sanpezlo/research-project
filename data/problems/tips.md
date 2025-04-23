@@ -73,8 +73,8 @@ Duplicar anterior
 
 agregar `#(ignore-test)` en `final` si son todas o en cada codigo.
 
-- Añadir transformacion correcta (si era `+=` dejar `+=`) y eliminar `i++;` o `i--;`
 - Transformacion vacia
+- Añadir transformacion correcta (si era `+=` dejar `+=`) y eliminar `i++;` o `i--;`
 
 ### final
 

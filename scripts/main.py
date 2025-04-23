@@ -6,10 +6,28 @@ import os
 import subprocess
 
 
+def gen_dataframe():
+    problems = 31
+
+    final = pd.DataFrame()
+
+    for i in range(1, problems + 1):
+        md = read(
+            f"/workspaces/research-project/data/problems/{i:02d}/correct.md")
+        codes = gen(md["codes"], "")
+
+        df = pd.DataFrame(codes, columns=["code"])
+        df.insert(0, "problem", md["problem"])
+
+        final = pd.concat([final, df], ignore_index=True)
+
+    final.to_excel(f"/workspaces/research-project/data/xlsx/all.xlsx")
+
+
 def dataframe(id_problem):
     md = read(
         f"/workspaces/research-project/data/problems/{id_problem}/correct.md")
-    codes = gen(md["codes"], "test")
+    codes = gen(md["codes"], "")
     df = pd.DataFrame(codes, columns=["code"])
     df.insert(0, "problem", md["problem"])
     df.to_excel(
@@ -75,7 +93,7 @@ def main():
 
     def choices(choice):
         if choice == "1":
-            dataframe("01")
+            gen_dataframe()
             return True
         elif choice == "2":
             window_tests()
