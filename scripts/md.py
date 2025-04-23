@@ -64,7 +64,7 @@ def transform_transformations(codes, transformations):
 
     transforms = []
     for code in codes:
-        i = re.search(r'while\s*\([^)]*\)\s*\{', code).end()
+        i = re.search(r'while\s*\(.*\)\s*\{', code).end()
 
         for transformation in transformations:
             body = code[:i + 1]
@@ -80,7 +80,7 @@ def transform_final(codes, finals):
 
     transforms = []
     for code in codes:
-        i = re.search(r'while\s*\([^)]*\)\s*\{', code).end()
+        i = re.search(r'while\s*\(.*\)\s*\{', code).end()
         brace = 1
 
         while i < len(code) and brace > 0:

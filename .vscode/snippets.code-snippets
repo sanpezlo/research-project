@@ -1,0 +1,44 @@
+{
+	
+	"Initial block": {
+		"scope": "markdown",
+		"prefix": "initial",
+		"body": [
+			"```initial",
+			"  $0",
+			"```",
+		],
+		"description": "Initial block"
+	},
+	"Transformation block": {
+		"scope": "markdown",
+		"prefix": "transformation",
+		"body": [
+			"```transformation",
+			"    $0",
+			"```",
+		],
+		"description": "Transformation block"
+	},
+	"Final block": {
+		"scope": "markdown",
+		"prefix": "final",
+		"body": [
+			"```final",
+			"  $0",
+			"```",
+		],
+		"description": "Final block"
+	},
+
+	"JS block": {
+		"scope": "markdown",
+		"prefix": "js",
+		"body": [
+			"```js",
+			"  $0",
+			"```",
+		],
+		"description": "JS block"
+	},
+}

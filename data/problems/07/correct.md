@@ -2,370 +2,134 @@
 Write a JavaScript function that returns the largest number from an array of numbers using a "while" loop.
 ---
 
-```js
-function max(numbers) {
+```initial
   let max = numbers[0];
   let i = 0;
-  while (i < numbers.length) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
 ```
 
-```js
-function max(numbers) {
-  let max = numbers[0];
+```initial
   let i = 0;
-  while (i <= numbers.length - 1) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
   let max = numbers[0];
-  let i = 0;
-  while (i < numbers.length) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
 ```
 
-```js
-function max(numbers) {
-  let max = numbers[0];
-  let i = 0;
-  while (i <= numbers.length - 1) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  let max = numbers[0];
-  let i = 0;
-  while (i <= numbers.length - 1) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
+```initial
   let max = numbers[0];
   let i = 1;
-  while (i <= numbers.length - 1) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
 ```
 
-```js
-function max(numbers) {
-  let max = numbers[0];
-  let i = 1;
-  while (i < numbers.length) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  let max = numbers[0];
-  let i = 1;
-  while (i <= numbers.length - 1) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  if (numbers.length == 0) {
-    return null;
-  }
-
-  let max = Number.MIN_VALUE;
-  let i = 0;
-  while (i < numbers.length) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  if (numbers.length == 0) {
-    return null;
-  }
-
-  let max = Number.MIN_VALUE;
-  let i = 0;
-  while (i <= numbers.length - 1) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  if (numbers.length == 0) {
-    return null;
-  }
-
-  let max = Number.MIN_VALUE;
-  let i = 0;
-  while (i < numbers.length) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  if (numbers.length == 0) {
-    return null;
-  }
-
-  let max = Number.MIN_VALUE;
-  let i = 0;
-  while (i <= numbers.length - 1) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  let i = 0;
-  let max = numbers[0];
-  while (i < numbers.length) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  let i = 0;
-  let max = numbers[0];
-  while (i <= numbers.length - 1) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  let i = 0;
-  let max = numbers[0];
-  while (i < numbers.length) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  let i = 0;
-  let max = numbers[0];
-  while (i <= numbers.length - 1) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
+```initial
   let i = 1;
   let max = numbers[0];
-  while (i < numbers.length) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
 ```
 
-```js
-function max(numbers) {
-  let i = 1;
-  let max = numbers[0];
-  while (i <= numbers.length - 1) {
-    if (numbers[i] > max) {
-      max = numbers[i];
-    }
-    i++;
+```initial
+  if (numbers.length == 0) {
+    return null;
   }
-  return max;
-}
+
+  let max = Number.MIN_VALUE;
+  let i = 0;
 ```
 
-```js
-function max(numbers) {
-  let i = 1;
-  let max = numbers[0];
-  while (i < numbers.length) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
-  let i = 1;
-  let max = numbers[0];
-  while (i <= numbers.length - 1) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
-  }
-  return max;
-}
-```
-
-```js
-function max(numbers) {
+```initial
   if (numbers.length == 0) {
     return null;
   }
 
   let i = 0;
   let max = Number.MIN_VALUE;
-  while (i < numbers.length) {
+```
+
+```transformation
     if (numbers[i] > max) {
       max = numbers[i];
     }
     i++;
-  }
-  return max;
-}
 ```
 
-```js
-function max(numbers) {
-  if (numbers.length == 0) {
-    return null;
-  }
-
-  let i = 0;
-  let max = Number.MIN_VALUE;
-  while (i <= numbers.length - 1) {
-    if (numbers[i] > max) {
+```transformation
+    if (numbers[i] - 1 >= max) {
       max = numbers[i];
     }
     i++;
-  }
+```
+
+```transformation
+    if (numbers[i] >= max + 1) {
+      max = numbers[i];
+    }
+    i++;
+```
+
+```transformation
+    if (max < numbers[i]) {
+      max = numbers[i];
+    }
+    i++;
+```
+
+```transformation
+    if (max <= numbers[i] - 1) {
+      max = numbers[i];
+    }
+    i++;
+```
+
+```transformation
+    if (max + 1 <= numbers[i]) {
+      max = numbers[i];
+    }
+    i++;
+```
+
+```final
   return max;
-}
 ```
 
 ```js
 function max(numbers) {
-  if (numbers.length == 0) {
-    return null;
-  }
-
-  let i = 0;
-  let max = Number.MIN_VALUE;
   while (i < numbers.length) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
+    //
   }
-  return max;
 }
 ```
 
 ```js
 function max(numbers) {
-  if (numbers.length == 0) {
-    return null;
-  }
-
-  let i = 0;
-  let max = Number.MIN_VALUE;
   while (i <= numbers.length - 1) {
-    if (max < numbers[i]) {
-      max = numbers[i];
-    }
-    i++;
+    //
   }
-  return max;
+}
+```
+
+```js
+function max(numbers) {
+  while (i + 1 <= numbers.length) {
+    //
+  }
+}
+```
+
+```js
+function max(numbers) {
+  while (numbers.length > i) {
+    //
+  }
+}
+```
+
+```js
+function max(numbers) {
+  while (numbers.length - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function max(numbers) {
+  while (numbers.length >= i + 1) {
+    //
+  }
 }
 ```

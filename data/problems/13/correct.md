@@ -2,1922 +2,585 @@
 Write a JavaScript function that returns whether a number is perfect using a "while" loop.
 ---
 
-```js
-function isPerfect(n) {
+```initial
   if (n <= 0) {
     return false;
   }
 
   let sum = 0;
   let i = 0;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
-  if (n < 1) {
+```initial
+  if (n <= 0) {
     return false;
   }
 
-  let sum = 0;
   let i = 0;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
+  let sum = 0;
 ```
 
-```js
-function isPerfect(n) {
+```initial
   if (n <= 0) {
     return false;
   }
 
   let sum = 0;
   let i = 1;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
-  if (n < 1) {
+```initial
+  if (n <= 0) {
     return false;
   }
 
-  let sum = 0;
   let i = 1;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
+  let sum = 0;
 ```
 
-```js
-function isPerfect(n) {
-  if (n <= 0) {
+```initial
+  if (0 >= n) {
     return false;
   }
 
   let sum = 0;
   let i = 0;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
-  if (n < 1) {
+```initial
+  if (0 >= n) {
     return false;
   }
 
-  let sum = 0;
   let i = 0;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
+  let sum = 0;
 ```
 
-```js
-function isPerfect(n) {
-  if (n <= 0) {
+```initial
+  if (0 >= n) {
     return false;
   }
 
   let sum = 0;
   let i = 1;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
-  if (n < 1) {
+```initial
+  if (0 >= n) {
     return false;
   }
 
-  let sum = 0;
   let i = 1;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
   let sum = 0;
-  let i = 0;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
+```initial
   if (n < 1) {
     return false;
   }
 
   let sum = 0;
   let i = 0;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
-  if (n <= 0) {
+```initial
+  if (n < 1) {
     return false;
   }
 
+  let i = 0;
   let sum = 0;
-  let i = 1;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
+```initial
   if (n < 1) {
     return false;
   }
 
   let sum = 0;
   let i = 1;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
+```initial
+  if (n < 1) {
+    return false;
+  }
+
+  let i = 1;
+  let sum = 0;
+```
+
+```initial
+  if (1 > n) {
+    return false;
+  }
+
+  let sum = 0;
+  let i = 0;
+```
+
+```initial
+  if (1 > n) {
+    return false;
+  }
+
+  let i = 0;
+  let sum = 0;
+```
+
+```initial
+  if (1 > n) {
+    return false;
+  }
+
+  let sum = 0;
+  let i = 1;
+```
+
+```initial
+  if (1 > n) {
+    return false;
+  }
+
+  let i = 1;
+  let sum = 0;
+```
+
+```initial
+  if (n - 1 < 0) {
+    return false;
+  }
+
+  let sum = 0;
+  let i = 0;
+```
+
+```initial
+  if (n - 1 < 0) {
+    return false;
+  }
+
+  let i = 0;
+  let sum = 0;
+```
+
+```initial
+  if (n - 1 < 0) {
+    return false;
+  }
+
+  let sum = 0;
+  let i = 1;
+```
+
+```initial
+  if (n - 1 < 0) {
+    return false;
+  }
+
+  let i = 1;
+  let sum = 0;
+```
+
+```initial
+  if (0 > n - 1) {
+    return false;
+  }
+
+  let sum = 0;
+  let i = 0;
+```
+
+```initial
+  if (0 > n - 1) {
+    return false;
+  }
+
+  let i = 0;
+  let sum = 0;
+```
+
+```initial
+  if (0 > n - 1) {
+    return false;
+  }
+
+  let sum = 0;
+  let i = 1;
+```
+
+```initial
+  if (0 > n - 1) {
+    return false;
+  }
+
+  let i = 1;
+  let sum = 0;
+```
+
+```initial
   if (n < 2) {
     return false;
   }
 
   let sum = 1;
   let i = 2;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
+```initial
   if (n < 2) {
     return false;
   }
 
-  let sum = 1;
   let i = 2;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
+  let sum = 1;
 ```
 
-```js
-function isPerfect(n) {
-  if (n < 2) {
+```initial
+  if (2 > n) {
     return false;
   }
 
   let sum = 1;
   let i = 2;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
+```initial
+  if (2 > n) {
+    return false;
+  }
+
+  let i = 2;
+  let sum = 1;
+```
+
+```initial
   if (n <= 1) {
     return false;
   }
 
   let sum = 1;
   let i = 2;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
 ```
 
-```js
-function isPerfect(n) {
+```initial
   if (n <= 1) {
     return false;
   }
 
+  let i = 2;
+  let sum = 1;
+```
+
+```initial
+  if (1 >= n) {
+    return false;
+  }
+
   let sum = 1;
   let i = 2;
+```
+
+```initial
+  if (1 >= n) {
+    return false;
+  }
+
+  let i = 2;
+  let sum = 1;
+```
+
+```initial
+  if (n - 1 <= 0) {
+    return false;
+  }
+
+  let sum = 1;
+  let i = 2;
+```
+
+```initial
+  if (n - 1 <= 0) {
+    return false;
+  }
+
+  let i = 2;
+  let sum = 1;
+```
+
+```initial
+  if (0 >= n - 1) {
+    return false;
+  }
+
+  let sum = 1;
+  let i = 2;
+```
+
+```initial
+  if (0 >= n - 1) {
+    return false;
+  }
+
+  let i = 2;
+  let sum = 1;
+```
+
+```transformation
+    if (n % i == 0) {
+      sum += i;
+    }
+    i++;
+```
+
+```final
+  return sum == n;
+```
+
+```final
+  return n == sum;
+```
+
+```js
+function isPerfect(n) {
   while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
+    //
   }
-  return sum == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
-  if (n <= 1) {
-    return false;
-  }
-
-  let sum = 1;
-  let i = 2;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n + 1 <= 2) {
-    return false;
-  }
-
-  let sum = 1;
-  let i = 2;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n + 1 <= 2) {
-    return false;
-  }
-
-  let sum = 1;
-  let i = 2;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n + 1 <= 2) {
-    return false;
-  }
-
-  let sum = 1;
-  let i = 2;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let sum = 0;
-  let i = 0;
   while (i <= n * 0.5) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
+    //
   }
-  return sum == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
+  while (i <= n / 2) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (i <= n - 1) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (i + 1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (n > i) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (n * 0.5 >= i) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (n / 2 >= i) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (n - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (n >= i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   if (n <= 0) {
     return false;
   }
 
   let sum = 0;
   let i = 1;
+```
+
+```initial
+  if (n <= 0) {
+    return false;
+  }
+
+  let i = 1;
+  let sum = 0;
+```
+
+```transformation
+    if (n % i == 0) {
+      sum += i;
+      if (i != n / i) {
+        sum += n / i;
+      }
+    }
+    i++;
+```
+
+```final
+  return sum - n == n;
+```
+
+```js
+function isPerfect(n) {
   while (i <= n ** 0.5) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
+    //
   }
-  return sum - n == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
-  if (n <= 0) {
-    return false;
+  while (i <= Math.pow(n, 0.5)) {
+    //
   }
+}
+```
 
-  let sum = 0;
-  let i = 1;
+```js
+function isPerfect(n) {
   while (i <= Math.sqrt(n)) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
+    //
   }
-  return sum - n == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
+  while (n ** 0.5 >= i) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (Math.pow(n, 0.5) >= i) {
+    //
+  }
+}
+```
+
+```js
+function isPerfect(n) {
+  while (Math.sqrt(n) >= i) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   if (n < 2) {
     return false;
   }
 
   let sum = 1;
   let i = 2;
+```
+
+```initial
+  if (n < 2) {
+    return false;
+  }
+
+  let i = 2;
+  let sum = 1;
+```
+
+```transformation
+    if (n % i == 0) {
+      sum += i;
+      if (i != n / i) {
+        sum += n / i;
+      }
+    }
+    i++;
+```
+
+```final
+  return sum == n;
+```
+
+```js
+function isPerfect(n) {
   while (i * i <= n) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
+    //
   }
-  return sum == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
-  if (n < 2) {
-    return false;
+  while (i ** 2 <= n) {
+    //
   }
+}
+```
 
-  let sum = 1;
-  let i = 2;
+```js
+function isPerfect(n) {
   while (Math.pow(i, 2) <= n) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
+    //
   }
-  return sum == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
-  if (n <= 0) {
-    return false;
+  while (n >= i * i) {
+    //
   }
-
-  let i = 0;
-  let sum = 0;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
-  if (n < 1) {
-    return false;
+  while (n >= i ** 2) {
+    //
   }
-
-  let i = 0;
-  let sum = 0;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
 }
 ```
 
 ```js
 function isPerfect(n) {
-  if (n <= 0) {
-    return false;
+  while (n >= Math.pow(i, 2)) {
+    //
   }
-
-  let i = 1;
-  let sum = 0;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 1) {
-    return false;
-  }
-
-  let i = 1;
-  let sum = 0;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let i = 0;
-  let sum = 0;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 1) {
-    return false;
-  }
-
-  let i = 0;
-  let sum = 0;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let i = 1;
-  let sum = 0;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 1) {
-    return false;
-  }
-
-  let i = 1;
-  let sum = 0;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let i = 0;
-  let sum = 0;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 1) {
-    return false;
-  }
-
-  let i = 0;
-  let sum = 0;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let i = 1;
-  let sum = 0;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 1) {
-    return false;
-  }
-
-  let i = 1;
-  let sum = 0;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 1) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 1) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 1) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n + 1 <= 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i <= n / 2) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n + 1 <= 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i < n) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n + 1 <= 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i <= n - 1) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let i = 0;
-  let sum = 0;
-  while (i <= n * 0.5) {
-    if (n % i == 0) {
-      sum += i;
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let i = 1;
-  let sum = 0;
-  while (i <= n ** 0.5) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
-  }
-  return sum - n == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n <= 0) {
-    return false;
-  }
-
-  let i = 1;
-  let sum = 0;
-  while (i <= Math.sqrt(n)) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
-  }
-  return sum - n == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (i * i <= n) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(n) {
-  if (n < 2) {
-    return false;
-  }
-
-  let i = 2;
-  let sum = 1;
-  while (Math.pow(i, 2) <= n) {
-    if (n % i == 0) {
-      sum += i;
-      if (i !== n / i) {
-        sum += n / i;
-      }
-    }
-    i++;
-  }
-  return sum == n;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 0;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 0;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 0;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 0;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 0;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 0;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 1) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 1) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 1) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N + 1 <= 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N + 1 <= 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N + 1 <= 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 0;
-  while (index <= N * 0.5) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index <= N ** 0.5) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result - N == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let result = 0;
-  let index = 1;
-  while (index <= Math.sqrt(N)) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result - N == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (index * index <= N) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let result = 1;
-  let index = 2;
-  while (Math.pow(index, 2) <= N) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 0;
-  let result = 0;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let index = 0;
-  let result = 0;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 0;
-  let result = 0;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let index = 0;
-  let result = 0;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 0;
-  let result = 0;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let index = 0;
-  let result = 0;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 1) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 1) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 1) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 1) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N + 1 <= 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index <= N / 2) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N + 1 <= 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index < N) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N + 1 <= 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index <= N - 1) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 0;
-  let result = 0;
-  while (index <= N * 0.5) {
-    if (N % index == 0) {
-      result += index;
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index <= N ** 0.5) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result - N == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N <= 0) {
-    return false;
-  }
-
-  let index = 1;
-  let result = 0;
-  while (index <= Math.sqrt(N)) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result - N == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (index * index <= N) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result == N;
-}
-```
-
-```js
-function isPerfect(N) {
-  if (N < 2) {
-    return false;
-  }
-
-  let index = 2;
-  let result = 1;
-  while (Math.pow(index, 2) <= N) {
-    if (N % index == 0) {
-      result += index;
-      if (index !== N / index) {
-        result += N / index;
-      }
-    }
-    index++;
-  }
-  return result == N;
 }
 ```

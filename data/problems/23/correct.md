@@ -2,494 +2,492 @@
 Write a JavaScript function that returns the length of a number using a "while" loop.
 ---
 
-```js
-function lengthOfNumber(num) {
+```initial
   if (num == 0) {
     return 1;
   }
+
   let length = 0;
-  while (num > 0) {
+```
+
+```initial
+  if (0 == num) {
+    return 1;
+  }
+
+  let length = 0;
+```
+
+```transformation
     num = Math.floor(num / 10);
     length++;
-  }
+```
+
+```transformation
+    length++;
+    num = Math.floor(num / 10);
+```
+
+```final
   return length;
-}
 ```
 
 ```js
 function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  while (num >= 1) {
-    num = Math.floor(num / 10);
-    length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  while (num != 0) {
-    num = Math.floor(num / 10);
-    length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
   while (num) {
-    num = Math.floor(num / 10);
-    length++;
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  while (num > 0) {
-    length++;
-    num = Math.floor(num / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  while (num >= 1) {
-    length++;
-    num = Math.floor(num / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
   while (num != 0) {
-    length++;
-    num = Math.floor(num / 10);
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
+  while (num > 0) {
+    //
   }
-  let length = 0;
-  while (num) {
-    length++;
-    num = Math.floor(num / 10);
-  }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
+  while (num >= 1) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 != num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 < num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (1 <= num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 <= num - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   let length = 1;
+```
+
+```transformation
+    num = Math.floor(num / 10);
+    length++;
+```
+
+```final
+  return length;
+```
+
+```js
+function lengthOfNumber(num) {
   while (num >= 10) {
-    num = Math.floor(num / 10);
-    length++;
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  let length = 1;
   while (num > 9) {
-    num = Math.floor(num / 10);
-    length++;
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
+  while (num + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < num + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   let length = 0;
+```
+
+```transformation
+    num = Math.floor(num / 10);
+    length++;
+```
+
+```final
+  return length + 1;
+```
+
+```js
+function lengthOfNumber(num) {
   while (num >= 10) {
-    num = Math.floor(num / 10);
-    length++;
+    //
   }
-  return length + 1;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  let length = 0;
   while (num > 9) {
-    num = Math.floor(num / 10);
-    length++;
+    //
   }
-  return length + 1;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
+  while (num + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < num + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   if (num == 0) {
     return 1;
   }
+
   let temp = num;
   let length = 0;
-  while (temp > 0) {
+```
+
+```initial
+  if (num == 0) {
+    return 1;
+  }
+
+  let length = 0;
+  let temp = num;
+```
+
+```initial
+  if (0 == num) {
+    return 1;
+  }
+
+  let temp = num;
+  let length = 0;
+```
+
+```initial
+  if (0 == num) {
+    return 1;
+  }
+
+  let length = 0;
+  let temp = num;
+```
+
+```transformation
     temp = Math.floor(temp / 10);
     length++;
-  }
-  return length;
-}
 ```
 
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let temp = num;
-  let length = 0;
-  while (temp >= 1) {
-    temp = Math.floor(temp / 10);
+```transformation
     length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let temp = num;
-  let length = 0;
-  while (temp != 0) {
     temp = Math.floor(temp / 10);
-    length++;
-  }
+```
+
+```final
   return length;
-}
 ```
 
 ```js
 function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let temp = num;
-  let length = 0;
   while (temp) {
-    temp = Math.floor(temp / 10);
-    length++;
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let temp = num;
-  let length = 0;
-  while (temp > 0) {
-    length++;
-    temp = Math.floor(temp / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let temp = num;
-  let length = 0;
-  while (temp >= 1) {
-    length++;
-    temp = Math.floor(temp / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let temp = num;
-  let length = 0;
   while (temp != 0) {
-    length++;
-    temp = Math.floor(temp / 10);
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
+  while (temp > 0) {
+    //
   }
-  let temp = num;
-  let length = 0;
-  while (temp) {
-    length++;
-    temp = Math.floor(temp / 10);
-  }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
+  while (temp >= 1) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 != temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 < temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (1 <= temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 <= temp - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
   let temp = num;
   let length = 1;
-  while (temp >= 10) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length;
-}
 ```
 
-```js
-function lengthOfNumber(num) {
-  let temp = num;
-  let length = 1;
-  while (temp > 9) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  let temp = num;
-  let length = 0;
-  while (temp >= 10) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length + 1;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  let temp = num;
-  let length = 0;
-  while (temp > 9) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length + 1;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp > 0) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp >= 1) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp != 0) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp) {
-    temp = Math.floor(temp / 10);
-    length++;
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp > 0) {
-    length++;
-    temp = Math.floor(temp / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp >= 1) {
-    length++;
-    temp = Math.floor(temp / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp != 0) {
-    length++;
-    temp = Math.floor(temp / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
-  if (num == 0) {
-    return 1;
-  }
-  let length = 0;
-  let temp = num;
-  while (temp) {
-    length++;
-    temp = Math.floor(temp / 10);
-  }
-  return length;
-}
-```
-
-```js
-function lengthOfNumber(num) {
+```initial
   let length = 1;
   let temp = num;
+```
+
+```transformation
+    temp = Math.floor(temp / 10);
+    length++;
+```
+
+```final
+  return length;
+```
+
+```js
+function lengthOfNumber(num) {
   while (temp >= 10) {
-    temp = Math.floor(temp / 10);
-    length++;
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  let length = 1;
-  let temp = num;
   while (temp > 9) {
-    temp = Math.floor(temp / 10);
-    length++;
+    //
   }
-  return length;
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
+  while (temp + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < temp + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let temp = num;
+  let length = 0;
+```
+
+```initial
   let length = 0;
   let temp = num;
-  while (temp >= 10) {
+```
+
+```transformation
     temp = Math.floor(temp / 10);
     length++;
-  }
+```
+
+```final
   return length + 1;
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp >= 10) {
+    //
+  }
 }
 ```
 
 ```js
 function lengthOfNumber(num) {
-  let length = 0;
-  let temp = num;
   while (temp > 9) {
-    temp = Math.floor(temp / 10);
-    length++;
+    //
   }
-  return length + 1;
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < temp + 1) {
+    //
+  }
 }
 ```

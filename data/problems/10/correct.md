@@ -2,1352 +2,763 @@
 Write a JavaScript function that returns the reversal of a number with two or more digits using a "while" loop.
 ---
 
-```js
-function reverseNumber(n) {
-  if (n < 10) return n;
-
-  let reversed = 0;
-  while (n > 0) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  if (n < 10 && n > -10) return n;
-
-  let reversed = 0;
-  let isNegative = n < 0;
-  n = Math.abs(n);
-
-  while (n > 0) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
+```initial
+  if (n < 10) {
+    return n;
   }
 
-  return isNegative ? -reversed : reversed;
-}
+  let reversed = 0;
 ```
 
-```js
-function reverseNumber(n) {
-  if (n <= 9) return n;
-
-  let reversed = 0;
-  while (n > 0) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  if (n <= 9 && n >= -9) return n;
-
-  let reversed = 0;
-  let isNegative = n < 0;
-  n = Math.abs(n);
-
-  while (n > 0) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
+```initial
+  if (n <= 9) {
+    return n;
   }
 
-  return isNegative ? -reversed : reversed;
-}
+  let reversed = 0;
 ```
 
-```js
-function reverseNumber(n) {
+```initial
+  if (n + 1 <= 10) {
+    return n;
+  }
+
   let reversed = 0;
-  while (n > 0) {
+```
+
+```initial
+  if (10 > n) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  if (9 >= n) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  if (10 >= n + 1) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  let reversed = 0;
+```
+
+```transformation
     reversed = reversed * 10 + (n % 10);
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 0) {
+```transformation
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 0) {
+```transformation
+    const remainder = n % 10;
+    reversed = reversed * 10 + remainder;
+    n = Math.floor(n / 10);
+```
+
+```transformation
     reversed *= 10;
     reversed += n % 10;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 0) {
+```transformation
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n < 10) return n;
-
-  let reversed = 0;
-  while (n) {
-    reversed = reversed * 10 + (n % 10);
+```transformation
+    const remainder = n % 10;
+    reversed *= 10;
+    reversed += remainder;
     n = Math.floor(n / 10);
-  }
+```
+
+```final
   return reversed;
+```
+
+```js
+function reverseNumber(n) {
+  while (n) {
+    //
+  }
 }
 ```
 
 ```js
 function reverseNumber(n) {
-  if (n < 10 && n > -10) return n;
+  while (n != 0) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (n > 0) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (n >= 1) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (n - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (0 != n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (0 < n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (0 <= n - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  if (n <= 9 && n >= -9) {
+    return n;
+  }
 
   let reversed = 0;
   let isNegative = n < 0;
   n = Math.abs(n);
-
-  while (n) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
-  return isNegative ? -reversed : reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n <= 9) return n;
+```initial
+  if (n <= 9 && n >= -9) {
+    return n;
+  }
 
+  n = Math.abs(n);
+  let isNegative = n < 0;
   let reversed = 0;
-  while (n) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n <= 9 && n >= -9) return n;
+```initial
+  if (n <= 9 && n >= -9) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let reversed = 0;
+  let isNegative = n < 0;
+```
+
+```initial
+  if (n < 10 && n > -10) {
+    return n;
+  }
 
   let reversed = 0;
   let isNegative = n < 0;
   n = Math.abs(n);
-
-  while (n) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
-  return isNegative ? -reversed : reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
+```initial
+  if (n < 10 && n > -10) {
+    return n;
   }
-  return reversed;
-}
+
+  n = Math.abs(n);
+  let isNegative = n < 0;
+  let reversed = 0;
 ```
 
-```js
-function reverseNumber(n) {
+```initial
+  if (n < 10 && n > -10) {
+    return n;
+  }
+
+  n = Math.abs(n);
   let reversed = 0;
-  while (n) {
+  let isNegative = n < 0;
+```
+
+```initial
+  if (-9 <= n && 9 >= n) {
+    return n;
+  }
+
+  let reversed = 0;
+  let isNegative = n < 0;
+  n = Math.abs(n);
+```
+
+```initial
+  if (-9 <= n && 9 >= n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let isNegative = n < 0;
+  let reversed = 0;
+```
+
+```initial
+  if (-9 <= n && 9 >= n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let reversed = 0;
+  let isNegative = n < 0;
+```
+
+```initial
+  if (-10 < n && 10 > n) {
+    return n;
+  }
+
+  let reversed = 0;
+  let isNegative = n < 0;
+  n = Math.abs(n);
+```
+
+```initial
+  if (-10 < n && 10 > n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let isNegative = n < 0;
+  let reversed = 0;
+```
+
+```initial
+  if (-10 < n && 10 > n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let reversed = 0;
+  let isNegative = n < 0;
+```
+
+```transformation
+    reversed = reversed * 10 + (n % 10);
+    n = Math.floor(n / 10);
+```
+
+```transformation
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n) {
+```transformation
+    const remainder = n % 10;
+    reversed = reversed * 10 + remainder;
+    n = Math.floor(n / 10);
+```
+
+```transformation
     reversed *= 10;
     reversed += n % 10;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n) {
+```transformation
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n < 10) return n;
-
-  let reversed = 0;
-  while (n >= 1) {
-    reversed = reversed * 10 + (n % 10);
+```transformation
+    const remainder = n % 10;
+    reversed *= 10;
+    reversed += remainder;
     n = Math.floor(n / 10);
+```
+
+```final
+  return isNegative ? -reversed : reversed;
+```
+
+```js
+function reverseNumber(n) {
+  while (n) {
+    //
   }
-  return reversed;
 }
 ```
 
 ```js
 function reverseNumber(n) {
-  if (n < 10 && n > -10) return n;
+  while (n != 0) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (n > 0) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (n >= 1) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (n - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (0 != n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (0 < n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (0 <= n - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  if (n <= 9 && n >= -9) {
+    return n;
+  }
 
   let reversed = 0;
   let isNegative = n < 0;
   n = Math.abs(n);
-
-  while (n >= 1) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
-  return isNegative ? -reversed : reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n <= 9) return n;
+```initial
+  if (n <= 9 && n >= -9) {
+    return n;
+  }
 
+  n = Math.abs(n);
+  let isNegative = n < 0;
   let reversed = 0;
-  while (n >= 1) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n <= 9 && n >= -9) return n;
+```initial
+  if (n <= 9 && n >= -9) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let reversed = 0;
+  let isNegative = n < 0;
+```
+
+```initial
+  if (n < 10 && n > -10) {
+    return n;
+  }
 
   let reversed = 0;
   let isNegative = n < 0;
   n = Math.abs(n);
-
-  while (n >= 1) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
-  return isNegative ? -reversed : reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 1) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
+```initial
+  if (n < 10 && n > -10) {
+    return n;
   }
-  return reversed;
-}
+
+  n = Math.abs(n);
+  let isNegative = n < 0;
+  let reversed = 0;
 ```
 
-```js
-function reverseNumber(n) {
+```initial
+  if (n < 10 && n > -10) {
+    return n;
+  }
+
+  n = Math.abs(n);
   let reversed = 0;
-  while (n >= 1) {
+  let isNegative = n < 0;
+```
+
+```initial
+  if (-9 <= n && 9 >= n) {
+    return n;
+  }
+
+  let reversed = 0;
+  let isNegative = n < 0;
+  n = Math.abs(n);
+```
+
+```initial
+  if (-9 <= n && 9 >= n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let isNegative = n < 0;
+  let reversed = 0;
+```
+
+```initial
+  if (-9 <= n && 9 >= n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let reversed = 0;
+  let isNegative = n < 0;
+```
+
+```initial
+  if (-10 < n && 10 > n) {
+    return n;
+  }
+
+  let reversed = 0;
+  let isNegative = n < 0;
+  n = Math.abs(n);
+```
+
+```initial
+  if (-10 < n && 10 > n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let isNegative = n < 0;
+  let reversed = 0;
+```
+
+```initial
+  if (-10 < n && 10 > n) {
+    return n;
+  }
+
+  n = Math.abs(n);
+  let reversed = 0;
+  let isNegative = n < 0;
+```
+
+```transformation
+    reversed = reversed * 10 + (n % 10);
+    n = Math.floor(n / 10);
+```
+
+```transformation
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 1) {
+```transformation
+    const remainder = n % 10;
+    reversed = reversed * 10 + remainder;
+    n = Math.floor(n / 10);
+```
+
+```transformation
     reversed *= 10;
     reversed += n % 10;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 1) {
+```transformation
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n < 10) return n;
-
-  let reversed = 0;
-  while (n >= 10) {
-    reversed = reversed * 10 + (n % 10);
+```transformation
+    const remainder = n % 10;
+    reversed *= 10;
+    reversed += remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n < 10 && n > -10) return n;
-
-  let reversed = 0;
-  let isNegative = n < 0;
-  n = Math.abs(n);
-
-  while (n >= 10) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
+```final
   reversed = reversed * 10 + n;
-
   return isNegative ? -reversed : reversed;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n <= 9) return n;
-
-  let reversed = 0;
-  while (n >= 10) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  if (n <= 9 && n >= -9) return n;
-
-  let reversed = 0;
-  let isNegative = n < 0;
-  n = Math.abs(n);
-
-  while (n >= 10) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
+```final
   reversed *= 10;
   reversed += n;
-
   return isNegative ? -reversed : reversed;
+```
+
+```js
+function reverseNumber(n) {
+  while (n >= 10) {
+    //
+  }
 }
 ```
 
 ```js
 function reverseNumber(n) {
+  while (n > 9) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (n + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (10 <= n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (9 < n) {
+    //
+  }
+}
+```
+
+```js
+function reverseNumber(n) {
+  while (10 < n + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  if (n < 10) {
+    return n;
+  }
+
   let reversed = 0;
-  while (n >= 10) {
+```
+
+```initial
+  if (n <= 9) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  if (n + 1 <= 10) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  if (10 > n) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  if (9 >= n) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  if (10 >= n + 1) {
+    return n;
+  }
+
+  let reversed = 0;
+```
+
+```initial
+  let reversed = 0;
+```
+
+```transformation
     reversed = reversed * 10 + (n % 10);
     n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 10) {
+```transformation
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 10) {
+```transformation
+    const remainder = n % 10;
+    reversed = reversed * 10 + remainder;
+    n = Math.floor(n / 10);
+```
+
+```transformation
     reversed *= 10;
     reversed += n % 10;
     n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 10) {
+```transformation
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
 ```
 
-```js
-function reverseNumber(n) {
-  if (n < 10) return n;
-
-  let reversed = 0;
-  while (n > 9) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  if (n < 10 && n > -10) return n;
-
-  let reversed = 0;
-  let isNegative = n < 0;
-  n = Math.abs(n);
-
-  while (n > 9) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
-  reversed = reversed * 10 + n;
-
-  return isNegative ? -reversed : reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  if (n <= 9) return n;
-
-  let reversed = 0;
-  while (n > 9) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  if (n <= 9 && n >= -9) return n;
-
-  let reversed = 0;
-  let isNegative = n < 0;
-  n = Math.abs(n);
-
-  while (n > 9) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-
-  reversed *= 10;
-  reversed += n;
-
-  return isNegative ? -reversed : reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 9) {
-    reversed = reversed * 10 + (n % 10);
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 9) {
-    let remainder = n % 10;
-    reversed = reversed * 10 + remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 9) {
-    reversed *= 10;
-    reversed += n % 10;
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 9) {
-    let remainder = n % 10;
-    reversed *= 10;
-    reversed += remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 0) {
-    const remainder = n % 10;
-    reversed = reversed * 10 + remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 0) {
+```transformation
     const remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
     n = Math.floor(n / 10);
-  }
-  return reversed;
-}
+```
+
+```final
+  return reversed * 10 + n;
 ```
 
 ```js
 function reverseNumber(n) {
-  let reversed = 0;
-  while (n) {
-    const remainder = n % 10;
-    reversed = reversed * 10 + remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n) {
-    const remainder = n % 10;
-    reversed *= 10;
-    reversed += remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 1) {
-    const remainder = n % 10;
-    reversed = reversed * 10 + remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 1) {
-    const remainder = n % 10;
-    reversed *= 10;
-    reversed += remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
   while (n >= 10) {
-    const remainder = n % 10;
-    reversed = reversed * 10 + remainder;
-    n = Math.floor(n / 10);
+    //
   }
-  return reversed * 10 + n;
 }
 ```
 
 ```js
 function reverseNumber(n) {
-  let reversed = 0;
-  while (n >= 10) {
-    const remainder = n % 10;
-    reversed *= 10;
-    reversed += remainder;
-    n = Math.floor(n / 10);
-  }
-  return reversed * 10 + n;
-}
-```
-
-```js
-function reverseNumber(n) {
-  let reversed = 0;
   while (n > 9) {
-    const remainder = n % 10;
-    reversed = reversed * 10 + remainder;
-    n = Math.floor(n / 10);
+    //
   }
-  return reversed * 10 + n;
 }
 ```
 
 ```js
 function reverseNumber(n) {
-  let reversed = 0;
-  while (n > 9) {
-    const remainder = n % 10;
-    reversed *= 10;
-    reversed += remainder;
-    n = Math.floor(n / 10);
+  while (n + 1 > 10) {
+    //
   }
-  return reversed * 10 + n;
 }
 ```
 
 ```js
-function reverseNumber(N) {
-  if (N < 10) return N;
-
-  let result = 0;
-  while (N > 0) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
+function reverseNumber(n) {
+  while (10 <= n) {
+    //
   }
-  return result;
 }
 ```
 
 ```js
-function reverseNumber(N) {
-  if (N < 10 && N > -10) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N > 0) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
+function reverseNumber(n) {
+  while (9 < n) {
+    //
   }
-
-  return negative ? -result : result;
 }
 ```
 
 ```js
-function reverseNumber(N) {
-  if (N <= 9) return N;
-
-  let result = 0;
-  while (N > 0) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
+function reverseNumber(n) {
+  while (10 < n + 1) {
+    //
   }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9 && N >= -9) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N > 0) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 0) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 0) {
-    let last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 0) {
-    result *= 10;
-    result += N % 10;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 0) {
-    let last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10) return N;
-
-  let result = 0;
-  while (N) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10 && N > -10) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9) return N;
-
-  let result = 0;
-  while (N) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9 && N >= -9) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N) {
-    let last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N) {
-    result *= 10;
-    result += N % 10;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N) {
-    let last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10) return N;
-
-  let result = 0;
-  while (N >= 1) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10 && N > -10) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N >= 1) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9) return N;
-
-  let result = 0;
-  while (N >= 1) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9 && N >= -9) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N >= 1) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 1) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 1) {
-    let last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 1) {
-    result *= 10;
-    result += N % 10;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 1) {
-    let last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10) return N;
-
-  let result = 0;
-  while (N >= 10) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10 && N > -10) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N >= 10) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  result = result * 10 + N;
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9) return N;
-
-  let result = 0;
-  while (N >= 10) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9 && N >= -9) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N >= 10) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  result *= 10;
-  result += N;
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 10) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 10) {
-    let last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 10) {
-    result *= 10;
-    result += N % 10;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 10) {
-    let last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10) return N;
-
-  let result = 0;
-  while (N > 9) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N < 10 && N > -10) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N > 9) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  result = result * 10 + N;
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9) return N;
-
-  let result = 0;
-  while (N > 9) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  if (N <= 9 && N >= -9) return N;
-
-  let result = 0;
-  let negative = N < 0;
-  N = Math.abs(N);
-
-  while (N > 9) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-
-  result *= 10;
-  result += N;
-
-  return negative ? -result : result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 9) {
-    result = result * 10 + (N % 10);
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 9) {
-    let last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 9) {
-    result *= 10;
-    result += N % 10;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 9) {
-    let last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 0) {
-    const last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 0) {
-    const last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N) {
-    const last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N) {
-    const last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 1) {
-    const last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 1) {
-    const last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 10) {
-    const last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N >= 10) {
-    const last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 9) {
-    const last = N % 10;
-    result = result * 10 + last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
-}
-```
-
-```js
-function reverseNumber(N) {
-  let result = 0;
-  while (N > 9) {
-    const last = N % 10;
-    result *= 10;
-    result += last;
-    N = Math.floor(N / 10);
-  }
-  return result * 10 + N;
 }
 ```
