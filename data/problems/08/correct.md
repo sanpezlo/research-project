@@ -6,7 +6,7 @@ Write a JavaScript function that returns in an array the first N numbers of the 
   if (n <= 0) {
     return [];
   }
-    if (n == 1) {
+  if (n == 1) {
     return [0];
   }
 
@@ -54,7 +54,7 @@ Write a JavaScript function that returns in an array the first N numbers of the 
   if (n <= 0) {
     return [];
   }
-    if (n == 1) {
+  if (n == 1) {
     return [0];
   }
 
@@ -440,7 +440,7 @@ function fibonacci(n) {
 
 ```js
 function fibonacci(n) {
-  while (i < n) {
+  while (i + 1 <= n) {
     //
   }
 }
@@ -448,7 +448,23 @@ function fibonacci(n) {
 
 ```js
 function fibonacci(n) {
-  while (i <= n - 1) {
+  while (n > i) {
+    //
+  }
+}
+```
+
+```js
+function fibonacci(n) {
+  while (n - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function fibonacci(n) {
+  while (n >= i + 1) {
     //
   }
 }
