@@ -6,6 +6,7 @@ function all() {
 
     const tests = [];
     tests.push(test(f, [], null));
+    tests.push(test(f, [0], 0));
     tests.push(test(f, [5], 5));
     tests.push(test(f, [1, 2], 2));
     tests.push(test(f, [5, 1, 2, 3], 5));

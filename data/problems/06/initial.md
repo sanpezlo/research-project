@@ -33,16 +33,6 @@ Write a JavaScript function that returns the smallest number from an array of nu
 ```
 
 ```initial
-  let min = 0;
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  let min = 0;
-```
-
-```initial
   if (numbers.length == 0) {
     return null;
   }

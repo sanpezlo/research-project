@@ -27,7 +27,7 @@ Write a JavaScript function that returns the largest number from an array of num
     return null;
   }
 
-  let max = Number.MIN_VALUE;
+  let max = 0;
   let i = 0;
 ```
 
@@ -37,7 +37,7 @@ Write a JavaScript function that returns the largest number from an array of num
   }
 
   let i = 0;
-  let max = Number.MIN_VALUE;
+  let max = 0;
 ```
 
 ```transformation
