@@ -5,12 +5,11 @@ function all() {
     const f = functions[i];
 
     const tests = [];
-    tests.push(test(f, 2, 1, [3]));
-    tests.push(test(f, 2, 2, [3, 8]));
-    tests.push(test(f, 3, 3, [4, 14, 36]));
-    tests.push(test(f, 1, 4, [2, 4, 6, 8]));
-    tests.push(test(f, 0, 3, [1, 2, 3]));
-    tests.push(test(f, 5, 0, []));
+    tests.push(test(f, "hello", "olleh"));
+    tests.push(test(f, "world", "dlrow"));
+    tests.push(test(f, "", ""));
+    tests.push(test(f, "a", "a"));
+    tests.push(test(f, "racecar", "racecar"));
 
     if (!tests.some(Boolean)) {
       console.log(i, tests);
@@ -18,8 +17,8 @@ function all() {
   }
 }
 
-function test(f, input_1, input_2, output) {
-  return JSON.stringify(f(input_1, input_2)) != JSON.stringify(output);
+function test(f, input, output) {
+  return JSON.stringify(f(input)) != JSON.stringify(output);
 }
 
 all();

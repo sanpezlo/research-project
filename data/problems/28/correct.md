@@ -1,200 +1,78 @@
 ---
-Write a JavaScript function that returns the sum of all integers between 1 and N, divisible by 9, using a "while" loop.
+Write a JavaScript function that given a string returns it without vowels using a "while" loop.
 ---
 
 ```initial
-  let i = 1;
-  let sum = 0;
-```
-
-```initial
-  let sum = 0;
-  let i = 1;
+  let result = "";
+  let i = 0;
 ```
 
 ```initial
   let i = 0;
-  let sum = 0;
-```
-
-```initial
-  let sum = 0;
-  let i = 0;
+  let result = "";
 ```
 
 ```transformation
-    if (i % 9 == 0) {
-      sum += i;
+    if (!"aeiouAEIOU".includes(str[i])) {
+      result += str[i];
+    }
+    i++;
+```
+
+```transformation
+    if (!"aeiou".includes(str[i].toLowerCase())) {
+      result += str[i];
     }
     i++;
 ```
 
 ```final
-  return sum;
+  return result;
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (i <= n) {
+function removeVowels(str) {
+  while (i < str.length) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (i < n + 1) {
+function removeVowels(str) {
+  while (i <= str.length - 1) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (i - 1 < n) {
+function removeVowels(str) {
+  while (i + 1 <= str.length) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n >= i) {
+function removeVowels(str) {
+  while (str.length > i) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n + 1 > i) {
+function removeVowels(str) {
+  while (str.length - 1 >= i) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n > i - 1) {
-    //
-  }
-}
-```
-
-===
-
-```initial
-  let i = n;
-  let sum = 0;
-```
-
-```initial
-  let sum = 0;
-  let i = n;
-```
-
-```transformation
-    if (i % 9 == 0) {
-      sum += i;
-    }
-    i--;
-```
-
-```final
-  return sum;
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (i >= 0) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (i + 1 > 0) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (i > -1) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (i > 0) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (i >= 1) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (i - 1 >= 0) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 <= i) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 < i + 1) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (-1 < i) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 < i) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (1 <= i) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 <= i - 1) {
+function removeVowels(str) {
+  while (str.length >= i + 1) {
     //
   }
 }
@@ -203,111 +81,95 @@ function countAndSumDivisibleBy9(n) {
 ===
 
 ```initial
-  let sum = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  let result = "";
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  let result = "";
+```
+
+```initial
+  let result = "";
+  let i = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+```
+
+```initial
+  const vowels = ["a", "e", "i", "o", "u"];
+  let result = "";
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+  let result = "";
+```
+
+```initial
+  let result = "";
+  let i = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
 ```
 
 ```transformation
-    if (n % 9 == 0) {
-      sum += n;
+    if (!vowels.includes(str[i].toLowerCase())) {
+      result += str[i];
     }
-    n--;
+    i++;
 ```
 
 ```final
-  return sum;
+  return result;
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n >= 0) {
+function removeVowels(str) {
+  while (i < str.length) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n + 1 > 0) {
+function removeVowels(str) {
+  while (i <= str.length - 1) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n > -1) {
+function removeVowels(str) {
+  while (i + 1 <= str.length) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n > 0) {
+function removeVowels(str) {
+  while (str.length > i) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n >= 1) {
+function removeVowels(str) {
+  while (str.length - 1 >= i) {
     //
   }
 }
 ```
 
 ```js
-function countAndSumDivisibleBy9(n) {
-  while (n - 1 >= 0) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 <= n) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 < n + 1) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (-1 < n) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 < n) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (1 <= n) {
-    //
-  }
-}
-```
-
-```js
-function countAndSumDivisibleBy9(n) {
-  while (0 <= n - 1) {
+function removeVowels(str) {
+  while (str.length >= i + 1) {
     //
   }
 }

@@ -5,14 +5,22 @@ function all() {
     const f = functions[i];
 
     const tests = [];
-    tests.push(test(f, 10, 0));
-    tests.push(test(f, 25, 10));
-    tests.push(test(f, 99, 81));
-    tests.push(test(f, 123, 6));
-    tests.push(test(f, 405, 0));
-    tests.push(test(f, 8917, 504));
-    tests.push(test(f, 10000, 0));
-    tests.push(test(f, 987654, 60480));
+    tests.push(test(f, 0, true));
+    tests.push(test(f, 1, true));
+    tests.push(test(f, 9, true));
+    tests.push(test(f, 10, false));
+    tests.push(test(f, 100, false));
+    tests.push(test(f, 153, true));
+    tests.push(test(f, 154, false));
+    tests.push(test(f, 370, true));
+    tests.push(test(f, 371, true));
+    tests.push(test(f, 407, true));
+    tests.push(test(f, 9473, false));
+    tests.push(test(f, 9474, true));
+    tests.push(test(f, 9475, false));
+    tests.push(test(f, 146511207, false));
+    tests.push(test(f, 146511208, true));
+    tests.push(test(f, 146511209, false));
 
     if (!tests.some(Boolean)) {
       console.log(i, tests);

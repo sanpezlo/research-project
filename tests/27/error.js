@@ -5,12 +5,17 @@ function all() {
     const f = functions[i];
 
     const tests = [];
-    tests.push(test(f, "hello", "olleh"));
-    tests.push(test(f, "world", "dlrow"));
-    tests.push(test(f, "", ""));
-    tests.push(test(f, "a", "a"));
-    tests.push(test(f, "racecar", "racecar"));
-
+    tests.push(test(f, 0, 0));
+    tests.push(test(f, 1, 0));
+    tests.push(test(f, 9, 9));
+    tests.push(test(f, 10, 9));
+    tests.push(test(f, 18, 27));
+    tests.push(test(f, 20, 27));
+    tests.push(test(f, 27, 54));
+    tests.push(test(f, 50, 135));
+    tests.push(test(f, 100, 594));
+    tests.push(test(f, 200, 2277));
+    tests.push(test(f, -10, 0));
     if (!tests.some(Boolean)) {
       console.log(i, tests);
     }

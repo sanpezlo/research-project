@@ -1,104 +1,50 @@
 ---
-Write a JavaScript function that returns the least common multiple of two numbers using a "while" loop.
+Write a JavaScript function that returns in an array the even numbers from 1 to N using a while loop.
 ---
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  let result = [0];
+  let i = 2;
 ```
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 2;
+  let result = [0];
 ```
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  const result = [0];
+  let i = 2;
 ```
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 2;
+  const result = [0];
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  let result = [n];
+  let i = 2;
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 2;
+  let result = [n];
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  const result = [n];
+  let i = 2;
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
-```
-
-```initial
-  #(ignore-test)
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 2;
+  const result = [n];
 ```
 
 ```transformation
-    if (result % a == 0 && result % b == 0) {
-      return result;
-    }
-    result += max;
-```
-
-```transformation
-    if (result % a == 0 && result % b == 0) {
-      return result;
-    }
-    result++;
-```
-
-```transformation
-    if (result % b == 0 && result % a == 0) {
-      return result;
-    }
-    result++;
+    result.push(i);
+    i += 2;
 ```
 
 ```final
@@ -106,96 +52,48 @@ Write a JavaScript function that returns the least common multiple of two number
 ```
 
 ```js
-function lcm(a, b) {
-  while (true) {
+function evenNumbers(n) {
+  while (i <= n) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (result) {
+function evenNumbers(n) {
+  while (i < n + 1) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (result != 0) {
+function evenNumbers(n) {
+  while (i - 1 < n) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (result > 0) {
+function evenNumbers(n) {
+  while (n >= i) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (result >= 1) {
+function evenNumbers(n) {
+  while (n + 1 > i) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (result - 1 >= 0) {
-    //
-  }
-}
-```
-
-```js
-function lcm(a, b) {
-  while (result >= 0) {
-    //
-  }
-}
-```
-
-```js
-function lcm(a, b) {
-  while (0 != result) {
-    //
-  }
-}
-```
-
-```js
-function lcm(a, b) {
-  while (0 < result) {
-    //
-  }
-}
-```
-
-```js
-function lcm(a, b) {
-  while (1 <= result) {
-    //
-  }
-}
-```
-
-```js
-function lcm(a, b) {
-  while (0 <= result - 1) {
-    //
-  }
-}
-```
-
-```js
-function lcm(a, b) {
-  while (0 <= result) {
+function evenNumbers(n) {
+  while (n > i - 1) {
     //
   }
 }
@@ -204,85 +102,97 @@ function lcm(a, b) {
 ===
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  let result = [0];
+  let i = 2;
 ```
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 2;
+  let result = [0];
 ```
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  const result = [0];
+  let i = 2;
 ```
 
 ```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 2;
+  const result = [0];
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  let result = [0];
+  let i = 1;
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 1;
+  let result = [0];
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  let max = Math.max(a, b);
-  let result = 0;
+  const result = [0];
+  let i = 1;
 ```
 
 ```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  const max = Math.max(a, b);
-  let result = 0;
+  let i = 1;
+  const result = [0];
 ```
 
 ```initial
-  #(ignore-test)
-  const max = Math.max(a, b);
-  let result = 0;
+  let result = [n];
+  let i = 2;
+```
+
+```initial
+  let i = 2;
+  let result = [n];
+```
+
+```initial
+  const result = [n];
+  let i = 2;
+```
+
+```initial
+  let i = 2;
+  const result = [n];
+```
+
+```initial
+  let result = [n];
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  let result = [n];
+```
+
+```initial
+  const result = [n];
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  const result = [n];
 ```
 
 ```transformation
-    result += max;
+    if (i % 2 != 1) {
+      result.push(i);
+    }
+    i++;
+```
+
+```transformation
+    if (i % 2 == 0) {
+      result.push(i);
+    }
+    i++;
 ```
 
 ```final
@@ -290,250 +200,48 @@ function lcm(a, b) {
 ```
 
 ```js
-function lcm(a, b) {
-  while (result % a != 0 || result % b != 0) {
+function evenNumbers(n) {
+  while (i <= n) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (result % b != 0 || result % a != 0) {
-    //
-  }
-}
-```
-
-===
-
-```initial
-  if (a == 0 || b == 0) {
-    return 0;
-  }
-
-  let result = 0;
-```
-
-```initial
-  if (b == 0 || a == 0) {
-    return 0;
-  }
-
-  let result = 0;
-```
-
-```initial
-  #(ignore-test)
-  if (a == 0) {
-    return 0;
-  }
-
-  let result = Math.max(a, b);
-```
-
-```initial
-  #(ignore-test)
-  if (b == 0) {
-    return 0;
-  }
-
-  let result = Math.max(a, b);
-```
-
-```initial
-  #(ignore-test)
-  let result = Math.max(a, b);
-```
-
-```transformation
-    if (result % a == 0 && result % b == 0) {
-      return result;
-    }
-    result++;
-```
-
-```transformation
-    if (result % b == 0 && result % a == 0) {
-      return result;
-    }
-    result++;
-```
-
-```js
-function lcm(a, b) {
-  while (true) {
-    //
-  }
-}
-```
-
-===
-
-```initial
-  #(ignore-test)
-  if (a == 0) {
-    return 0;
-  }
-
-  let result = a;
-  let temp = b;
-```
-
-```initial
-  #(ignore-test)
-  if (a == 0) {
-    return 0;
-  }
-
-  let temp = b;
-  let result = a;
-```
-
-```initial
-  #(ignore-test)
-  if (a == 0) {
-    return 0;
-  }
-
-  let result = a;
-  let temp = b;
-```
-
-```initial
-  #(ignore-test)
-  if (a == 0) {
-    return 0;
-  }
-
-  let temp = b;
-  let result = a;
-```
-
-```initial
-  #(ignore-test)
-  if (b == 0) {
-    return 0;
-  }
-
-  let result = a;
-  let temp = b;
-```
-
-```initial
-  #(ignore-test)
-  if (b == 0) {
-    return 0;
-  }
-
-  let temp = b;
-  let result = a;
-```
-
-```initial
-  #(ignore-test)
-  if (b == 0) {
-    return 0;
-  }
-
-  let result = a;
-  let temp = b;
-```
-
-```initial
-  #(ignore-test)
-  if (b == 0) {
-    return 0;
-  }
-
-  let temp = b;
-  let result = a;
-```
-
-```initial
-  #(ignore-test)
-  let result = a;
-  let temp = b;
-```
-
-```initial
-  #(ignore-test)
-  let temp = b;
-  let result = a;
-```
-
-```transformation
-    if (result < temp) {
-      result += a;
-    } else {
-      temp += b;
-    }
-```
-
-```final
-  return result;
-```
-
-```js
-function lcm(a, b) {
-  while (result != temp) {
+function evenNumbers(n) {
+  while (i < n + 1) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (temp != result) {
-    //
-  }
-}
-```
-
-===
-
-```initial
-  #(ignore-test)
-  if (a == 0) {
-    return 0;
-  }
-
-  let result = a;
-```
-
-```initial
-  #(ignore-test)
-  if (0 == a) {
-    return 0;
-  }
-
-  let result = a;
-```
-
-```initial
-  #(ignore-test)
-  let result = a;
-```
-
-```transformation
-    result += a;
-```
-
-```final
-  return result;
-```
-
-```js
-function lcm(a, b) {
-  while (result % b != 0) {
+function evenNumbers(n) {
+  while (i - 1 < n) {
     //
   }
 }
 ```
 
 ```js
-function lcm(a, b) {
-  while (0 != result % b) {
+function evenNumbers(n) {
+  while (n >= i) {
+    //
+  }
+}
+```
+
+```js
+function evenNumbers(n) {
+  while (n + 1 > i) {
+    //
+  }
+}
+```
+
+```js
+function evenNumbers(n) {
+  while (n > i - 1) {
     //
   }
 }

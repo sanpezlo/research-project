@@ -202,6 +202,13 @@ function oddNumbers(n) {
     i++;
 ```
 
+```transformation
+    if (1 == i % 2) {
+      result.push(i);
+    }
+    i++;
+```
+
 ```final
   return result;
 ```

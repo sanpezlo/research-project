@@ -5,14 +5,15 @@ function all() {
     const f = functions[i];
 
     const tests = [];
-    tests.push(test(f, 4, 5, 20));
-    tests.push(test(f, 5, 4, 20));
-    tests.push(test(f, 6, 8, 24));
-    tests.push(test(f, 1, 100, 100));
-    tests.push(test(f, 1, 1, 1));
-    tests.push(test(f, 0, 5, 0));
-    tests.push(test(f, 5, 0, 0));
-    tests.push(test(f, 0, 0, 0));
+    tests.push(test(f, 0, []));
+    tests.push(test(f, 1, []));
+    tests.push(test(f, 2, [2]));
+    tests.push(test(f, 3, [2]));
+    tests.push(test(f, 4, [2, 4]));
+    tests.push(test(f, 5, [2, 4]));
+    tests.push(test(f, 6, [2, 4, 6]));
+    tests.push(test(f, 7, [2, 4, 6]));
+    tests.push(test(f, 8, [2, 4, 6, 8]));
 
     if (!tests.some(Boolean)) {
       console.log(i, tests);
@@ -20,8 +21,8 @@ function all() {
   }
 }
 
-function test(f, input_1, input_2, output) {
-  return JSON.stringify(f(input_1, input_2)) != JSON.stringify(output);
+function test(f, input, output) {
+  return JSON.stringify(f(input)) != JSON.stringify(output);
 }
 
 all();

@@ -5,14 +5,14 @@ function all() {
     const f = functions[i];
 
     const tests = [];
-    tests.push(test(f, 10, [1, 0]));
-    tests.push(test(f, 25, [2, 5]));
-    tests.push(test(f, 99, [9, 9]));
-    tests.push(test(f, 123, [1, 3]));
-    tests.push(test(f, 405, [4, 5]));
-    tests.push(test(f, 8907, [8, 7]));
-    tests.push(test(f, 10000, [1, 0]));
-    tests.push(test(f, 987654, [9, 4]));
+    tests.push(test(f, 10, 0));
+    tests.push(test(f, 25, 10));
+    tests.push(test(f, 99, 81));
+    tests.push(test(f, 123, 6));
+    tests.push(test(f, 405, 0));
+    tests.push(test(f, 8917, 504));
+    tests.push(test(f, 10000, 0));
+    tests.push(test(f, 987654, 60480));
 
     if (!tests.every(Boolean)) {
       console.log(i, tests);

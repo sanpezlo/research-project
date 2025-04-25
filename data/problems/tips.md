@@ -310,7 +310,7 @@ Sin embargo en el codigo anterior, el `return` es importante ya que el ciclo no 
 
 ---
 
-TODO: el problema 4, en final, hay una seccion vacia, porque no hay errores finales posibles cambiando los operadores del while, por lo tanto a la hora de hacer las mezclas de los diferentes tipos de errores, deben verificar que no esten vacios.
+TODO: el problema 4, en final (o initial 14), hay una seccion vacia, porque no hay errores finales posibles cambiando los operadores del while, por lo tanto a la hora de hacer las mezclas de los diferentes tipos de errores, deben verificar que no esten vacios.
 
 ```
 ===
@@ -319,3 +319,11 @@ TODO: el problema 4, en final, hay una seccion vacia, porque no hay errores fina
 ```
 
 ejem (error initial con error final), al hacer esto sin verificar daria algunos con solo (error initial) y no combiandos.
+
+# Futuro
+
+- Ampliar dataset
+
+- Eliminar `#(ignore-test)` y agregar una forma para verificar que se produce un ciclo infinito, asi se evita que pase por alto una solucion marcado con `#(ignore-test)`.
+
+- Algunos problemas se quedaron fuera, por incompatibilidad con el sistema actual, de generacion de soluciones. Sea porque no tenian `initial`, `transformation` o `final`.

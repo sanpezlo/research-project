@@ -1,30 +1,62 @@
 ---
-Write a JavaScript function that returns in an array the even numbers from 1 to N using a while loop.
+Write a JavaScript function that returns in an array all uppercase letters of the alphabet from 'A' to 'Z' using a "while" loop.
 ---
 
 ```initial
   let result = [];
-  let i = 2;
+  let charCode = 65;
 ```
 
 ```initial
-  let i = 2;
+  let charCode = 65;
   let result = [];
 ```
 
 ```initial
   const result = [];
-  let i = 2;
+  let charCode = 65;
 ```
 
 ```initial
-  let i = 2;
+  let charCode = 65;
+  const result = [];
+```
+
+```initial
+  let result = [];
+  let charCode = "A".charCodeAt(0);
+```
+
+```initial
+  let charCode = "A".charCodeAt(0);
+  let result = [];
+```
+
+```initial
+  const result = [];
+  let charCode = "A".charCodeAt(0);
+```
+
+```initial
+  let charCode = "A".charCodeAt(0);
   const result = [];
 ```
 
 ```transformation
-    result.push(i);
-    i += 2;
+    let letter = String.fromCharCode(charCode);
+    result.push(letter);
+    charCode++;
+```
+
+```transformation
+    const letter = String.fromCharCode(charCode);
+    result.push(letter);
+    charCode++;
+```
+
+```transformation
+    result.push(String.fromCharCode(charCode));
+    charCode++;
 ```
 
 ```final
@@ -32,48 +64,96 @@ Write a JavaScript function that returns in an array the even numbers from 1 to 
 ```
 
 ```js
-function evenNumbers(n) {
-  while (i <= n) {
+function uppercaseLetters() {
+  while (charCode <= 90) {
     //
   }
 }
 ```
 
 ```js
-function evenNumbers(n) {
-  while (i < n + 1) {
+function uppercaseLetters() {
+  while (charCode < 91) {
     //
   }
 }
 ```
 
 ```js
-function evenNumbers(n) {
-  while (i - 1 < n) {
+function uppercaseLetters() {
+  while (charCode - 1 < 90) {
     //
   }
 }
 ```
 
 ```js
-function evenNumbers(n) {
-  while (n >= i) {
+function uppercaseLetters() {
+  while (90 >= charCode) {
     //
   }
 }
 ```
 
 ```js
-function evenNumbers(n) {
-  while (n + 1 > i) {
+function uppercaseLetters() {
+  while (91 > charCode) {
     //
   }
 }
 ```
 
 ```js
-function evenNumbers(n) {
-  while (n > i - 1) {
+function uppercaseLetters() {
+  while (90 > charCode - 1) {
+    //
+  }
+}
+```
+
+```js
+function uppercaseLetters() {
+  while (charCode <= "Z".charCodeAt(0)) {
+    //
+  }
+}
+```
+
+```js
+function uppercaseLetters() {
+  while (charCode < "Z".charCodeAt(0) + 1) {
+    //
+  }
+}
+```
+
+```js
+function uppercaseLetters() {
+  while (charCode - 1 < "Z".charCodeAt(0)) {
+    //
+  }
+}
+```
+
+```js
+function uppercaseLetters() {
+  while ("Z".charCodeAt(0) >= charCode) {
+    //
+  }
+}
+```
+
+```js
+function uppercaseLetters() {
+  while ("Z".charCodeAt(0) + 1 > charCode) {
+    //
+  }
+}
+```
+
+```js
+function uppercaseLetters() {
+  while ("Z".charCodeAt(0) > charCode - 1) {
     //
   }
 }
@@ -83,56 +163,27 @@ function evenNumbers(n) {
 
 ```initial
   let result = [];
-  let i = 2;
+  let letter = "A";
 ```
 
 ```initial
-  let i = 2;
+  let letter = "A";
   let result = [];
 ```
 
 ```initial
   const result = [];
-  let i = 2;
+  let letter = "A";
 ```
 
 ```initial
-  let i = 2;
-  const result = [];
-```
-
-```initial
-  let result = [];
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  let result = [];
-```
-
-```initial
-  const result = [];
-  let i = 1;
-```
-
-```initial
-  let i = 1;
+  let letter = "A";
   const result = [];
 ```
 
 ```transformation
-    if (i % 2 != 1) {
-      result.push(i);
-    }
-    i++;
-```
-
-```transformation
-    if (i % 2 == 0) {
-      result.push(i);
-    }
-    i++;
+    result.push(letter);
+    letter = String.fromCharCode(letter.charCodeAt(0) + 1);
 ```
 
 ```final
@@ -140,48 +191,16 @@ function evenNumbers(n) {
 ```
 
 ```js
-function evenNumbers(n) {
-  while (i <= n) {
+function uppercaseLetters() {
+  while (letter <= "Z") {
     //
   }
 }
 ```
 
 ```js
-function evenNumbers(n) {
-  while (i < n + 1) {
-    //
-  }
-}
-```
-
-```js
-function evenNumbers(n) {
-  while (i - 1 < n) {
-    //
-  }
-}
-```
-
-```js
-function evenNumbers(n) {
-  while (n >= i) {
-    //
-  }
-}
-```
-
-```js
-function evenNumbers(n) {
-  while (n + 1 > i) {
-    //
-  }
-}
-```
-
-```js
-function evenNumbers(n) {
-  while (n > i - 1) {
+function uppercaseLetters() {
+  while ("Z" >= letter) {
     //
   }
 }

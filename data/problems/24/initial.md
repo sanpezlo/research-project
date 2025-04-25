@@ -1,141 +1,120 @@
 ---
-Write a JavaScript function that returns in an array all factors of a number using a "while" loop.
+Write a JavaScript function that returns the conversion from binary to decimal using a "while" loop.
 ---
 
 ```initial
-  let factors = [0];
-  let i = 1;
+  let decimal = 1;
+  let power = 0;
 ```
 
 ```initial
-  let i = 1;
-  let factors = [0];
+  let power = 0;
+  let decimal = 1;
 ```
 
 ```initial
-  const factors = [0];
-  let i = 1;
+  let decimal = 0;
+  let power = 1;
 ```
 
 ```initial
-  let i = 1;
-  const factors = [0];
+  let power = 1;
+  let decimal = 0;
 ```
 
 ```initial
-  let factors = [0];
-  let i = 0;
+  let decimal = 1;
+  let power = 1;
 ```
 
 ```initial
-  let i = 0;
-  let factors = [0];
-```
-
-```initial
-  const factors = [0];
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  const factors = [0];
-```
-
-```initial
-  let factors = [num];
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  let factors = [num];
-```
-
-```initial
-  const factors = [num];
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  const factors = [num];
-```
-
-```initial
-  let factors = [num];
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  let factors = [num];
-```
-
-```initial
-  const factors = [num];
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  const factors = [num];
+  let power = 1;
+  let decimal = 1;
 ```
 
 ```transformation
-    if (num % i == 0) {
-      factors.push(i);
-    }
-    i++;
+    decimal += (binary % 10) * Math.pow(2, power);
+    binary = Math.floor(binary / 10);
+    power++;
+```
+
+```transformation
+    decimal += (binary % 10) * 2 ** power;
+    binary = Math.floor(binary / 10);
+    power++;
 ```
 
 ```final
-  return factors;
+  return decimal;
 ```
 
 ```js
-function factorsOfNumber(num) {
-  while (i <= num) {
+function binaryToDecimal(binary) {
+  while (binary) {
     //
   }
 }
 ```
 
 ```js
-function factorsOfNumber(num) {
-  while (i < num + 1) {
+function binaryToDecimal(binary) {
+  while (binary != 0) {
     //
   }
 }
 ```
 
 ```js
-function factorsOfNumber(num) {
-  while (i - 1 < num) {
+function binaryToDecimal(binary) {
+  while (binary > 0) {
     //
   }
 }
 ```
 
 ```js
-function factorsOfNumber(num) {
-  while (num >= i) {
+function binaryToDecimal(binary) {
+  while (binary >= 1) {
     //
   }
 }
 ```
 
 ```js
-function factorsOfNumber(num) {
-  while (num + 1 > i) {
+function binaryToDecimal(binary) {
+  while (binary - 1 >= 0) {
     //
   }
 }
 ```
 
 ```js
-function factorsOfNumber(num) {
-  while (num > i - 1) {
+function binaryToDecimal(binary) {
+  while (0 != binary) {
+    //
+  }
+}
+```
+
+```js
+function binaryToDecimal(binary) {
+  while (0 < binary) {
+    //
+  }
+}
+```
+
+```js
+function binaryToDecimal(binary) {
+  while (1 <= binary) {
+    //
+  }
+}
+```
+
+```js
+function binaryToDecimal(binary) {
+  while (0 <= binary - 1) {
     //
   }
 }

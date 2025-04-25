@@ -1,100 +1,108 @@
 ---
-Write a JavaScript function that returns the conversion from binary to decimal using a "while" loop.
+Write a JavaScript function that returns in an array the first N numbers of the sequence: a(N) = a^N + a (N-1) + N using a "while" loop.
 ---
 
 ```initial
-  let decimal = 0;
-  let power = 0;
+  let result = [];
+  let i = 1;
 ```
 
 ```initial
-  let power = 0;
-  let decimal = 0;
+  let i = 1;
+  let result = [];
+```
+
+```initial
+  const result = [];
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  const result = [];
 ```
 
 ```transformation
-    decimal += (binary % 10) * Math.pow(2, power);
-    binary = Math.floor(binary / 10);
-    power++;
+    let value = a ** i + a * (i - 1) + i;
+    result.push(value);
+    i++;
 ```
 
 ```transformation
-    decimal += (binary % 10) * 2 ** power;
-    binary = Math.floor(binary / 10);
-    power++;
+    let value = a ** i + a * (i - 1) + i;
+    i++;
+    result.push(value);
+```
+
+```transformation
+    result.push(a ** i + a * (i - 1) + i);
+    i++;
+```
+
+```transformation
+    let value = Math.pow(a, i) + a * (i - 1) + i;
+    result.push(value);
+    i++;
+```
+
+```transformation
+    let value = Math.pow(a, i) + a * (i - 1) + i;
+    i++;
+    result.push(value);
+```
+
+```transformation
+    result.push(Math.pow(a, i) + a * (i - 1) + i);
+    i++;
 ```
 
 ```final
-  return decimal;
+  return result;
 ```
 
 ```js
-function binaryToDecimal(binary) {
-  while (binary) {
+function sequence(a, n) {
+  while (i <= n) {
     //
   }
 }
 ```
 
 ```js
-function binaryToDecimal(binary) {
-  while (binary != 0) {
+function sequence(a, n) {
+  while (i < n + 1) {
     //
   }
 }
 ```
 
 ```js
-function binaryToDecimal(binary) {
-  while (binary > 0) {
+function sequence(a, n) {
+  while (i - 1 < n) {
     //
   }
 }
 ```
 
 ```js
-function binaryToDecimal(binary) {
-  while (binary >= 1) {
+function sequence(a, n) {
+  while (n >= i) {
     //
   }
 }
 ```
 
 ```js
-function binaryToDecimal(binary) {
-  while (binary - 1 >= 0) {
+function sequence(a, n) {
+  while (n + 1 > i) {
     //
   }
 }
 ```
 
 ```js
-function binaryToDecimal(binary) {
-  while (0 != binary) {
-    //
-  }
-}
-```
-
-```js
-function binaryToDecimal(binary) {
-  while (0 < binary) {
-    //
-  }
-}
-```
-
-```js
-function binaryToDecimal(binary) {
-  while (1 <= binary) {
-    //
-  }
-}
-```
-
-```js
-function binaryToDecimal(binary) {
-  while (0 <= binary - 1) {
+function sequence(a, n) {
+  while (n > i - 1) {
     //
   }
 }

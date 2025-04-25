@@ -1,62 +1,55 @@
 ---
-Write a JavaScript function that returns in an array all uppercase letters of the alphabet from 'A' to 'Z' using a "while" loop.
+Write a JavaScript function that returns the square, cube and square root of all numbers from 1 to N using a "while" loop.
 ---
 
 ```initial
   let result = [];
-  let charCode = 65;
+  let i = 1;
 ```
 
 ```initial
-  let charCode = 65;
+  let i = 1;
   let result = [];
 ```
 
 ```initial
   const result = [];
-  let charCode = 65;
+  let i = 1;
 ```
 
 ```initial
-  let charCode = 65;
-  const result = [];
-```
-
-```initial
-  let result = [];
-  let charCode = "A".charCodeAt(0);
-```
-
-```initial
-  let charCode = "A".charCodeAt(0);
-  let result = [];
-```
-
-```initial
-  const result = [];
-  let charCode = "A".charCodeAt(0);
-```
-
-```initial
-  let charCode = "A".charCodeAt(0);
+  let i = 1;
   const result = [];
 ```
 
 ```transformation
-    let letter = String.fromCharCode(charCode);
-    result.push(letter);
-    charCode++;
+    result.push({
+      number: i,
+      square: i ** 2,
+      cube: i ** 3,
+      squareRoot: Math.sqrt(i),
+    });
+    i++;
 ```
 
 ```transformation
-    const letter = String.fromCharCode(charCode);
-    result.push(letter);
-    charCode++;
+    result.push({
+      number: i,
+      square: Math.pow(i, 2),
+      cube: Math.pow(i, 3),
+      squareRoot: Math.pow(i, 1 / 2),
+    });
+    i++;
 ```
 
 ```transformation
-    result.push(String.fromCharCode(charCode));
-    charCode++;
+    result.push({
+      number: i,
+      square: i * i,
+      cube: i * i * i,
+      squareRoot: i ** 0.5,
+    });
+    i++;
 ```
 
 ```final
@@ -64,96 +57,48 @@ Write a JavaScript function that returns in an array all uppercase letters of th
 ```
 
 ```js
-function uppercaseLetters() {
-  while (charCode <= 90) {
+function calculatePowers(n) {
+  while (i <= n) {
     //
   }
 }
 ```
 
 ```js
-function uppercaseLetters() {
-  while (charCode < 91) {
+function calculatePowers(n) {
+  while (i < n + 1) {
     //
   }
 }
 ```
 
 ```js
-function uppercaseLetters() {
-  while (charCode - 1 < 90) {
+function calculatePowers(n) {
+  while (i - 1 < n) {
     //
   }
 }
 ```
 
 ```js
-function uppercaseLetters() {
-  while (90 >= charCode) {
+function calculatePowers(n) {
+  while (n >= i) {
     //
   }
 }
 ```
 
 ```js
-function uppercaseLetters() {
-  while (91 > charCode) {
+function calculatePowers(n) {
+  while (n + 1 > i) {
     //
   }
 }
 ```
 
 ```js
-function uppercaseLetters() {
-  while (90 > charCode - 1) {
-    //
-  }
-}
-```
-
-```js
-function uppercaseLetters() {
-  while (charCode <= "Z".charCodeAt(0)) {
-    //
-  }
-}
-```
-
-```js
-function uppercaseLetters() {
-  while (charCode < "Z".charCodeAt(0) + 1) {
-    //
-  }
-}
-```
-
-```js
-function uppercaseLetters() {
-  while (charCode - 1 < "Z".charCodeAt(0)) {
-    //
-  }
-}
-```
-
-```js
-function uppercaseLetters() {
-  while ("Z".charCodeAt(0) >= charCode) {
-    //
-  }
-}
-```
-
-```js
-function uppercaseLetters() {
-  while ("Z".charCodeAt(0) + 1 > charCode) {
-    //
-  }
-}
-```
-
-```js
-function uppercaseLetters() {
-  while ("Z".charCodeAt(0) > charCode - 1) {
+function calculatePowers(n) {
+  while (n > i - 1) {
     //
   }
 }
@@ -163,27 +108,52 @@ function uppercaseLetters() {
 
 ```initial
   let result = [];
-  let letter = "A";
+  let i = 0;
 ```
 
 ```initial
-  let letter = "A";
+  let i = 0;
   let result = [];
 ```
 
 ```initial
   const result = [];
-  let letter = "A";
+  let i = 0;
 ```
 
 ```initial
-  let letter = "A";
+  let i = 0;
   const result = [];
 ```
 
 ```transformation
-    result.push(letter);
-    letter = String.fromCharCode(letter.charCodeAt(0) + 1);
+    result.push({
+      number: i + 1,
+      square: (i + 1) ** 2,
+      cube: (i + 1) ** 3,
+      squareRoot: Math.sqrt(i + 1),
+    });
+    i++;
+```
+
+```transformation
+    result.push({
+      number: i + 1,
+      square: Math.pow(i + 1, 2),
+      cube: Math.pow(i + 1, 3),
+      squareRoot: Math.pow(i + 1, 1 / 2),
+    });
+    i++;
+```
+
+```transformation
+    result.push({
+      number: i + 1,
+      square: (i + 1) * (i + 1),
+      cube: (i + 1) * (i + 1) * (i + 1),
+      squareRoot: (i + 1) ** 0.5,
+    });
+    i++;
 ```
 
 ```final
@@ -191,16 +161,48 @@ function uppercaseLetters() {
 ```
 
 ```js
-function uppercaseLetters() {
-  while (letter <= "Z") {
+function calculatePowers(n) {
+  while (i < n) {
     //
   }
 }
 ```
 
 ```js
-function uppercaseLetters() {
-  while ("Z" >= letter) {
+function calculatePowers(n) {
+  while (i <= n - 1) {
+    //
+  }
+}
+```
+
+```js
+function calculatePowers(n) {
+  while (i + 1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function calculatePowers(n) {
+  while (n > i) {
+    //
+  }
+}
+```
+
+```js
+function calculatePowers(n) {
+  while (n - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function calculatePowers(n) {
+  while (n >= i + 1) {
     //
   }
 }

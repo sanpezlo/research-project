@@ -1,364 +1,78 @@
 ---
-Write a JavaScript function that counts the number of infants (<5), children (≤17) and adults in an array, respectively, given an array of ages using a while loop.
+Write a JavaScript function that returns in an array the first and last digit respectively of any number greater than or equal to 2 digits using a "while" loop.
 ---
 
 ```initial
-  let babies = 1;
-  let children = 0;
-  let adults = 0;
-  let i = 0;
+  let lastDigit = num / 10;
+  let firstDigit = num;
 ```
 
 ```initial
-  let i = 0;
-  let babies = 1;
-  let children = 0;
-  let adults = 0;
+  let firstDigit = num;
+  let lastDigit = num / 10;
 ```
 
 ```initial
-  let adults = 0;
-  let i = 0;
-  let babies = 1;
-  let children = 0;
+  const lastDigit = num / 10;
+  let firstDigit = num;
 ```
 
 ```initial
-  let children = 0;
-  let adults = 0;
-  let i = 0;
-  let babies = 1;
-```
-
-```initial
-  let babies = 0;
-  let children = 1;
-  let adults = 0;
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  let babies = 0;
-  let children = 1;
-  let adults = 0;
-```
-
-```initial
-  let adults = 0;
-  let i = 0;
-  let babies = 0;
-  let children = 1;
-```
-
-```initial
-  let children = 1;
-  let adults = 0;
-  let i = 0;
-  let babies = 0;
-```
-
-```initial
-  let babies = 0;
-  let children = 0;
-  let adults = 1;
-  let i = 0;
-```
-
-```initial
-  let i = 0;
-  let babies = 0;
-  let children = 0;
-  let adults = 1;
-```
-
-```initial
-  let adults = 1;
-  let i = 0;
-  let babies = 0;
-  let children = 0;
-```
-
-```initial
-  let children = 0;
-  let adults = 1;
-  let i = 0;
-  let babies = 0;
+  let firstDigit = num;
+  const lastDigit = num / 10;
 ```
 
 ```transformation
-    if (ages[i] < 5) {
-      babies++;
-    } else if (ages[i] <= 17) {
-      children++;
-    } else {
-      adults++;
-    }
-    i++;
-```
-
-```transformation
-    if (ages[i] >= 18) {
-      adults++;
-    } else if (ages[i] > 4) {
-      children++;
-    } else {
-      babies++;
-    }
-    i++;
-```
-
-```transformation
-    if (ages[i] <= 4) {
-      babies++;
-    } else if (ages[i] < 18) {
-      children++;
-    } else {
-      adults++;
-    }
-    i++;
-```
-
-```transformation
-    if (ages[i] > 17) {
-      adults++;
-    } else if (ages[i] >= 5) {
-      children++;
-    } else {
-      babies++;
-    }
-    i++;
+    firstDigit = Math.floor(firstDigit / 10);
 ```
 
 ```final
-  return [babies, children, adults];
+  return [firstDigit, lastDigit];
 ```
 
 ```js
-function countAgeGroups(ages) {
-  while (i < ages.length) {
+function firstLastDigit(num) {
+  while (firstDigit >= 10) {
     //
   }
 }
 ```
 
 ```js
-function countAgeGroups(ages) {
-  while (i <= ages.length - 1) {
+function firstLastDigit(num) {
+  while (firstDigit > 9) {
     //
   }
 }
 ```
 
 ```js
-function countAgeGroups(ages) {
-  while (i + 1 <= ages.length) {
+function firstLastDigit(num) {
+  while (firstDigit + 1 > 10) {
     //
   }
 }
 ```
 
 ```js
-function countAgeGroups(ages) {
-  while (ages.length > i) {
+function firstLastDigit(num) {
+  while (10 <= firstDigit) {
     //
   }
 }
 ```
 
 ```js
-function countAgeGroups(ages) {
-  while (ages.length - 1 >= i) {
+function firstLastDigit(num) {
+  while (9 < firstDigit) {
     //
   }
 }
 ```
 
 ```js
-function countAgeGroups(ages) {
-  while (ages.length >= i + 1) {
-    //
-  }
-}
-```
-
-===
-
-```initial
-  let babies = 1;
-  let children = 0;
-  let adults = 0;
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  let babies = 1;
-  let children = 0;
-  let adults = 0;
-```
-
-```initial
-  let adults = 0;
-  let i = 1;
-  let babies = 1;
-  let children = 0;
-```
-
-```initial
-  let children = 0;
-  let adults = 0;
-  let i = 1;
-  let babies = 1;
-```
-
-```initial
-  let babies = 0;
-  let children = 1;
-  let adults = 0;
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  let babies = 0;
-  let children = 1;
-  let adults = 0;
-```
-
-```initial
-  let adults = 0;
-  let i = 1;
-  let babies = 0;
-  let children = 1;
-```
-
-```initial
-  let children = 1;
-  let adults = 0;
-  let i = 1;
-  let babies = 0;
-```
-
-```initial
-  let babies = 0;
-  let children = 0;
-  let adults = 1;
-  let i = 1;
-```
-
-```initial
-  let i = 1;
-  let babies = 0;
-  let children = 0;
-  let adults = 1;
-```
-
-```initial
-  let adults = 1;
-  let i = 1;
-  let babies = 0;
-  let children = 0;
-```
-
-```initial
-  let children = 0;
-  let adults = 1;
-  let i = 1;
-  let babies = 0;
-```
-
-```transformation
-    if (ages[i - 1] < 5) {
-      babies++;
-    } else if (ages[i - 1] <= 17) {
-      children++;
-    } else {
-      adults++;
-    }
-    i++;
-```
-
-```transformation
-    if (ages[i - 1] >= 18) {
-      adults++;
-    } else if (ages[i - 1] > 4) {
-      children++;
-    } else {
-      babies++;
-    }
-    i++;
-```
-
-```transformation
-    if (ages[i - 1] <= 4) {
-      babies++;
-    } else if (ages[i - 1] < 18) {
-      children++;
-    } else {
-      adults++;
-    }
-    i++;
-```
-
-```transformation
-    if (ages[i - 1] > 17) {
-      adults++;
-    } else if (ages[i - 1] >= 5) {
-      children++;
-    } else {
-      babies++;
-    }
-    i++;
-```
-
-```final
-  return [babies, children, adults];
-```
-
-```js
-function countAgeGroups(ages) {
-  while (i <= ages.length) {
-    //
-  }
-}
-```
-
-```js
-function countAgeGroups(ages) {
-  while (i < ages.length + 1) {
-    //
-  }
-}
-```
-
-```js
-function countAgeGroups(ages) {
-  while (i - 1 < ages.length) {
-    //
-  }
-}
-```
-
-```js
-function countAgeGroups(ages) {
-  while (ages.length >= i) {
-    //
-  }
-}
-```
-
-```js
-function countAgeGroups(ages) {
-  while (ages.length + 1 > i) {
-    //
-  }
-}
-```
-
-```js
-function countAgeGroups(ages) {
-  while (ages.length > i - 1) {
+function firstLastDigit(num) {
+  while (10 < firstDigit + 1) {
     //
   }
 }

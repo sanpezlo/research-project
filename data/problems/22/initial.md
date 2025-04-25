@@ -1,65 +1,303 @@
 ---
-Write a JavaScript function that returns whether a number is an Armstrong number using a "while" loop.
+Write a JavaScript function that returns the length of a number using a "while" loop.
 ---
 
 ```initial
-  let sum = 1;
-  let temp = num;
-  let digits = num.toString().length;
+  let length = 0;
 ```
 
 ```initial
-  let digits = num.toString().length;
-  let sum = 1;
+  if (num != 0) {
+    return 1;
+  }
+
+  let length = 0;
+```
+
+```initial
+  if (0 != num) {
+    return 1;
+  }
+
+  let length = 0;
+```
+
+```transformation
+    num = Math.floor(num / 10);
+    length++;
+```
+
+```transformation
+    length++;
+    num = Math.floor(num / 10);
+```
+
+```final
+  return length;
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num != 0) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num > 0) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num >= 1) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 != num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 < num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (1 <= num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (0 <= num - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let length = 0;
+```
+
+```transformation
+    num = Math.floor(num / 10);
+    length++;
+```
+
+```final
+  return length;
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num >= 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num > 9) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < num + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let length = 1;
+```
+
+```transformation
+    num = Math.floor(num / 10);
+    length++;
+```
+
+```final
+  return length + 1;
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num >= 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num > 9) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (num + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < num) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < num + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let temp = num;
+  let length = 0;
+```
+
+```initial
+  let length = 0;
   let temp = num;
 ```
 
 ```initial
-  let digits = num.toString().length;
-  let sum = 1;
+  if (num != 0) {
+    return 1;
+  }
+
+  let temp = num;
+  let length = 0;
+```
+
+```initial
+  if (num != 0) {
+    return 1;
+  }
+
+  let length = 0;
+  let temp = num;
+```
+
+```initial
+  if (0 != num) {
+    return 1;
+  }
+
+  let temp = num;
+  let length = 0;
+```
+
+```initial
+  if (0 != num) {
+    return 1;
+  }
+
+  let length = 0;
   let temp = num;
 ```
 
 ```transformation
-    sum += Math.pow(temp % 10, digits);
     temp = Math.floor(temp / 10);
+    length++;
 ```
 
 ```transformation
-    sum += (temp % 10) ** digits;
-    temp = Math.floor(temp / 10);
-```
-
-```transformation
-    let digit = temp % 10;
-    sum += digit ** digits;
-    temp = Math.floor(temp / 10);
-```
-
-```transformation
-    let digit = temp % 10;
-    sum += Math.pow(digit, digits);
-    temp = Math.floor(temp / 10);
-```
-
-```transformation
-    const digit = temp % 10;
-    sum += digit ** digits;
-    temp = Math.floor(temp / 10);
-```
-
-```transformation
-    const digit = temp % 10;
-    sum += Math.pow(digit, digits);
+    length++;
     temp = Math.floor(temp / 10);
 ```
 
 ```final
-  return sum == num;
+  return length;
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (temp) {
     //
   }
@@ -67,7 +305,7 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (temp != 0) {
     //
   }
@@ -75,7 +313,7 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (temp > 0) {
     //
   }
@@ -83,7 +321,7 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (temp >= 1) {
     //
   }
@@ -91,7 +329,7 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (temp - 1 >= 0) {
     //
   }
@@ -99,7 +337,7 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (0 != temp) {
     //
   }
@@ -107,7 +345,7 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (0 < temp) {
     //
   }
@@ -115,7 +353,7 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (1 <= temp) {
     //
   }
@@ -123,8 +361,146 @@ function isArmstrongNumber(num) {
 ```
 
 ```js
-function isArmstrongNumber(num) {
+function lengthOfNumber(num) {
   while (0 <= temp - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let temp = num;
+  let length = 0;
+```
+
+```initial
+  let length = 0;
+  let temp = num;
+```
+
+```transformation
+    temp = Math.floor(temp / 10);
+    length++;
+```
+
+```final
+  return length;
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp >= 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp > 9) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < temp + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let temp = num;
+  let length = 1;
+```
+
+```initial
+  let length = 1;
+  let temp = num;
+```
+
+```transformation
+    temp = Math.floor(temp / 10);
+    length++;
+```
+
+```final
+  return length + 1;
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp >= 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp > 9) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (temp + 1 > 10) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 <= temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (9 < temp) {
+    //
+  }
+}
+```
+
+```js
+function lengthOfNumber(num) {
+  while (10 < temp + 1) {
     //
   }
 }

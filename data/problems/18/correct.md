@@ -1,104 +1,126 @@
 ---
-Write a JavaScript function that returns the square, cube and square root of all numbers from 1 to N using a "while" loop.
+Write a JavaScript function that counts the number of infants (<5), children (≤17) and adults in an array, respectively, given an array of ages using a while loop.
 ---
 
 ```initial
-  let result = [];
-  let i = 1;
+  let babies = 0;
+  let children = 0;
+  let adults = 0;
+  let i = 0;
 ```
 
 ```initial
-  let i = 1;
-  let result = [];
+  let i = 0;
+  let babies = 0;
+  let children = 0;
+  let adults = 0;
 ```
 
 ```initial
-  const result = [];
-  let i = 1;
+  let adults = 0;
+  let i = 0;
+  let babies = 0;
+  let children = 0;
 ```
 
 ```initial
-  let i = 1;
-  const result = [];
+  let children = 0;
+  let adults = 0;
+  let i = 0;
+  let babies = 0;
 ```
 
 ```transformation
-    result.push({
-      number: i,
-      square: i ** 2,
-      cube: i ** 3,
-      squareRoot: Math.sqrt(i),
-    });
+    if (ages[i] < 5) {
+      babies++;
+    } else if (ages[i] <= 17) {
+      children++;
+    } else {
+      adults++;
+    }
     i++;
 ```
 
 ```transformation
-    result.push({
-      number: i,
-      square: Math.pow(i, 2),
-      cube: Math.pow(i, 3),
-      squareRoot: Math.pow(i, 1 / 2),
-    });
+    if (ages[i] >= 18) {
+      adults++;
+    } else if (ages[i] > 4) {
+      children++;
+    } else {
+      babies++;
+    }
     i++;
 ```
 
 ```transformation
-    result.push({
-      number: i,
-      square: i * i,
-      cube: i * i * i,
-      squareRoot: i ** 0.5,
-    });
+    if (ages[i] <= 4) {
+      babies++;
+    } else if (ages[i] < 18) {
+      children++;
+    } else {
+      adults++;
+    }
+    i++;
+```
+
+```transformation
+    if (ages[i] > 17) {
+      adults++;
+    } else if (ages[i] >= 5) {
+      children++;
+    } else {
+      babies++;
+    }
     i++;
 ```
 
 ```final
-  return result;
+  return [babies, children, adults];
 ```
 
 ```js
-function calculatePowers(n) {
-  while (i <= n) {
+function countAgeGroups(ages) {
+  while (i < ages.length) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (i < n + 1) {
+function countAgeGroups(ages) {
+  while (i <= ages.length - 1) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (i - 1 < n) {
+function countAgeGroups(ages) {
+  while (i + 1 <= ages.length) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (n >= i) {
+function countAgeGroups(ages) {
+  while (ages.length > i) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (n + 1 > i) {
+function countAgeGroups(ages) {
+  while (ages.length - 1 >= i) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (n > i - 1) {
+function countAgeGroups(ages) {
+  while (ages.length >= i + 1) {
     //
   }
 }
@@ -107,102 +129,124 @@ function calculatePowers(n) {
 ===
 
 ```initial
-  let result = [];
-  let i = 0;
+  let babies = 0;
+  let children = 0;
+  let adults = 0;
+  let i = 1;
 ```
 
 ```initial
-  let i = 0;
-  let result = [];
+  let i = 1;
+  let babies = 0;
+  let children = 0;
+  let adults = 0;
 ```
 
 ```initial
-  const result = [];
-  let i = 0;
+  let adults = 0;
+  let i = 1;
+  let babies = 0;
+  let children = 0;
 ```
 
 ```initial
-  let i = 0;
-  const result = [];
+  let children = 0;
+  let adults = 0;
+  let i = 1;
+  let babies = 0;
 ```
 
 ```transformation
-    result.push({
-      number: i + 1,
-      square: (i + 1) ** 2,
-      cube: (i + 1) ** 3,
-      squareRoot: Math.sqrt(i + 1),
-    });
+    if (ages[i - 1] < 5) {
+      babies++;
+    } else if (ages[i - 1] <= 17) {
+      children++;
+    } else {
+      adults++;
+    }
     i++;
 ```
 
 ```transformation
-    result.push({
-      number: i + 1,
-      square: Math.pow(i + 1, 2),
-      cube: Math.pow(i + 1, 3),
-      squareRoot: Math.pow(i + 1, 1 / 2),
-    });
+    if (ages[i - 1] >= 18) {
+      adults++;
+    } else if (ages[i - 1] > 4) {
+      children++;
+    } else {
+      babies++;
+    }
     i++;
 ```
 
 ```transformation
-    result.push({
-      number: i + 1,
-      square: (i + 1) * (i + 1),
-      cube: (i + 1) * (i + 1) * (i + 1),
-      squareRoot: (i + 1) ** 0.5,
-    });
+    if (ages[i - 1] <= 4) {
+      babies++;
+    } else if (ages[i - 1] < 18) {
+      children++;
+    } else {
+      adults++;
+    }
+    i++;
+```
+
+```transformation
+    if (ages[i - 1] > 17) {
+      adults++;
+    } else if (ages[i - 1] >= 5) {
+      children++;
+    } else {
+      babies++;
+    }
     i++;
 ```
 
 ```final
-  return result;
+  return [babies, children, adults];
 ```
 
 ```js
-function calculatePowers(n) {
-  while (i < n) {
+function countAgeGroups(ages) {
+  while (i <= ages.length) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (i <= n - 1) {
+function countAgeGroups(ages) {
+  while (i < ages.length + 1) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (i + 1 <= n) {
+function countAgeGroups(ages) {
+  while (i - 1 < ages.length) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (n > i) {
+function countAgeGroups(ages) {
+  while (ages.length >= i) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (n - 1 >= i) {
+function countAgeGroups(ages) {
+  while (ages.length + 1 > i) {
     //
   }
 }
 ```
 
 ```js
-function calculatePowers(n) {
-  while (n >= i + 1) {
+function countAgeGroups(ages) {
+  while (ages.length > i - 1) {
     //
   }
 }
