@@ -5,23 +5,25 @@ function all() {
     const f = functions[i];
 
     const tests = [];
-    tests.push(test(f, 2, 3, 5));
-    tests.push(test(f, 10, 5, 15));
-    tests.push(test(f, -1, 1, 0));
-    tests.push(test(f, 0, 0, 0));
-    tests.push(test(f, -5, -3, -8));
-    tests.push(test(f, 7, -2, 5));
-    tests.push(test(f, 100, 200, 300));
-    tests.push(test(f, 232, 100, 332));
-
+    tests.push(test(f, 0, 0));
+    tests.push(test(f, 1, 0));
+    tests.push(test(f, 9, 9));
+    tests.push(test(f, 10, 9));
+    tests.push(test(f, 18, 27));
+    tests.push(test(f, 20, 27));
+    tests.push(test(f, 27, 54));
+    tests.push(test(f, 50, 135));
+    tests.push(test(f, 100, 594));
+    tests.push(test(f, 200, 2277));
+    tests.push(test(f, -10, 0));
     if (!tests.every(Boolean)) {
       console.log(i, tests);
     }
   }
 }
 
-function test(f, input_1, input_2, output) {
-  return JSON.stringify(f(input_1, input_2)) == JSON.stringify(output);
+function test(f, input, output) {
+  return JSON.stringify(f(input)) == JSON.stringify(output);
 }
 
 all();

@@ -41,6 +41,8 @@ Agrupar por `transformation`, luego por `initial` y por `final`.
 ```
 ````
 
+Use `#(ignore-test)` Solo si es necesario dentro de `initial`.
+
 Cambiar las precondiciones `if`, cambiando de `<` a `<=` o `>` a `>=` y viceversa, en algunos casos pasan todos los test, por lo que no es una solucion valida.
 
 Cambiar las precondiciones `if`, cambiando de Cambiar de `<` a `>` o `<=` a `>=` y viceversa.

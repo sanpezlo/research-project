@@ -5,17 +5,17 @@ function all() {
     const f = functions[i];
 
     const tests = [];
-    tests.push(test(f, 0, 0));
-    tests.push(test(f, 1, 0));
-    tests.push(test(f, 9, 9));
-    tests.push(test(f, 10, 9));
-    tests.push(test(f, 18, 27));
-    tests.push(test(f, 20, 27));
-    tests.push(test(f, 27, 54));
-    tests.push(test(f, 50, 135));
-    tests.push(test(f, 100, 594));
-    tests.push(test(f, 200, 2277));
-    tests.push(test(f, -10, 0));
+    tests.push(test(f, "", ""));
+    tests.push(test(f, "aeiou", ""));
+    tests.push(test(f, "AEIOU", ""));
+    tests.push(test(f, "hello", "hll"));
+    tests.push(test(f, "HELLO", "HLL"));
+    tests.push(test(f, "JavaScript", "JvScrpt"));
+    tests.push(test(f, "HOLA MUNDO", "HL MND"));
+    tests.push(test(f, "12345", "12345"));
+    tests.push(test(f, "xyz", "xyz"));
+    tests.push(test(f, "Vowels: aeiouAEIOU", "Vwls: "));
+
     if (!tests.some(Boolean)) {
       console.log(i, tests);
     }

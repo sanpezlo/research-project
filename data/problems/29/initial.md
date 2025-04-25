@@ -1,3 +1,222 @@
 ---
-Write a JavaScript function that returns in an array the first N numbers of the Fibonacci sequence using a "while" loop.
+Write a JavaScript function that given a string returns it without vowels using a "while" loop.
 ---
+
+```initial
+  let result = str;
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let result = str;
+```
+
+```initial
+  let result = " ";
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let result = " ";
+```
+
+```transformation
+    if (!"aeiouAEIOU".includes(str[i])) {
+      result += str[i];
+    }
+    i++;
+```
+
+```transformation
+    if (!"aeiou".includes(str[i].toLowerCase())) {
+      result += str[i];
+    }
+    i++;
+```
+
+```final
+  return result;
+```
+
+```js
+function removeVowels(str) {
+  while (i < str.length) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (i <= str.length - 1) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (i + 1 <= str.length) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (str.length > i) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (str.length - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (str.length >= i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let vowels = ["a", "e", "i", "o", "u"];
+  let result = str;
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  let result = str;
+```
+
+```initial
+  let result = str;
+  let i = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+```
+
+```initial
+  const vowels = ["a", "e", "i", "o", "u"];
+  let result = str;
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+  let result = str;
+```
+
+```initial
+  let result = str;
+  let i = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+```
+
+```initial
+  let vowels = ["a", "e", "i", "o", "u"];
+  let result = " ";
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  let result = " ";
+```
+
+```initial
+  let result = " ";
+  let i = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+```
+
+```initial
+  const vowels = ["a", "e", "i", "o", "u"];
+  let result = " ";
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+  let result = " ";
+```
+
+```initial
+  let result = " ";
+  let i = 0;
+  const vowels = ["a", "e", "i", "o", "u"];
+```
+
+```transformation
+    if (!vowels.includes(str[i].toLowerCase())) {
+      result += str[i];
+    }
+    i++;
+```
+
+```final
+  return result;
+```
+
+```js
+function removeVowels(str) {
+  while (i < str.length) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (i <= str.length - 1) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (i + 1 <= str.length) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (str.length > i) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (str.length - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function removeVowels(str) {
+  while (str.length >= i + 1) {
+    //
+  }
+}
+```

@@ -1,70 +1,313 @@
 ---
-Write a JavaScript function that returns the sum of two numbers without using the addition operator, instead using bitwise operators and a "while" loop.
+Write a JavaScript function that returns the sum of all integers between 1 and N, divisible by 9, using a "while" loop.
 ---
 
-```transformation
-    let carry = a & b;
-    a = a ^ b;
-    b = carry << 1;
+```initial
+  let i = 1;
+  let sum = 0;
+```
+
+```initial
+  let sum = 0;
+  let i = 1;
+```
+
+```initial
+  let i = 0;
+  let sum = 0;
+```
+
+```initial
+  let sum = 0;
+  let i = 0;
 ```
 
 ```transformation
-    let carry = a & b;
-    a = (a & ~b) | (b & ~a);
-    b = carry << 1;
-```
-
-```transformation
-    const carry = a & b;
-    a = a ^ b;
-    b = carry << 1;
-```
-
-```transformation
-    const carry = a & b;
-    a = (a & ~b) | (b & ~a);
-    b = carry << 1;
+    if (i % 9 == 0) {
+      sum += i;
+    }
+    i++;
 ```
 
 ```final
-  return a;
+  return sum;
 ```
 
 ```js
-function addWithoutPlus(a, b) {
-  while (b) {
+function countAndSumDivisibleBy9(n) {
+  while (i <= n) {
     //
   }
 }
 ```
 
 ```js
-function addWithoutPlus(a, b) {
-  while (b != 0) {
+function countAndSumDivisibleBy9(n) {
+  while (i < n + 1) {
     //
   }
 }
 ```
 
 ```js
-function addWithoutPlus(a, b) {
-  while (b > 0 || b < 0) {
+function countAndSumDivisibleBy9(n) {
+  while (i - 1 < n) {
     //
   }
 }
 ```
 
 ```js
-function addWithoutPlus(a, b) {
-  while (0 != b) {
+function countAndSumDivisibleBy9(n) {
+  while (n >= i) {
     //
   }
 }
 ```
 
 ```js
-function addWithoutPlus(a, b) {
-  while (b < 0 || b > 0) {
+function countAndSumDivisibleBy9(n) {
+  while (n + 1 > i) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (n > i - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let i = n;
+  let sum = 0;
+```
+
+```initial
+  let sum = 0;
+  let i = n;
+```
+
+```transformation
+    if (i % 9 == 0) {
+      sum += i;
+    }
+    i--;
+```
+
+```final
+  return sum;
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (i >= 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (i + 1 > 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (i > -1) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (i > 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (i >= 1) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (i - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 <= i) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 < i + 1) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (-1 < i) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 < i) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (1 <= i) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 <= i - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let sum = 0;
+```
+
+```transformation
+    if (n % 9 == 0) {
+      sum += n;
+    }
+    n--;
+```
+
+```final
+  return sum;
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (n >= 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (n + 1 > 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (n > -1) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (n > 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (n >= 1) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (n - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 <= n) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 < n + 1) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (-1 < n) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 < n) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (1 <= n) {
+    //
+  }
+}
+```
+
+```js
+function countAndSumDivisibleBy9(n) {
+  while (0 <= n - 1) {
     //
   }
 }

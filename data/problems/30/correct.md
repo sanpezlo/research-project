@@ -1,5 +1,5 @@
 ---
-Write a JavaScript function that given a string returns it without vowels using a "while" loop.
+Write a JavaScript function that given a string, returns a string with each letter capitalized using a "while" loop.
 ---
 
 ```initial
@@ -13,16 +13,7 @@ Write a JavaScript function that given a string returns it without vowels using 
 ```
 
 ```transformation
-    if (!"aeiouAEIOU".includes(str[i])) {
-      result += str[i];
-    }
-    i++;
-```
-
-```transformation
-    if (!"aeiou".includes(str[i].toLowerCase())) {
-      result += str[i];
-    }
+    result += str[i].toUpperCase();
     i++;
 ```
 
@@ -31,7 +22,7 @@ Write a JavaScript function that given a string returns it without vowels using 
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (i < str.length) {
     //
   }
@@ -39,7 +30,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (i <= str.length - 1) {
     //
   }
@@ -47,7 +38,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (i + 1 <= str.length) {
     //
   }
@@ -55,7 +46,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (str.length > i) {
     //
   }
@@ -63,7 +54,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (str.length - 1 >= i) {
     //
   }
@@ -71,7 +62,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (str.length >= i + 1) {
     //
   }
@@ -81,54 +72,36 @@ function removeVowels(str) {
 ===
 
 ```initial
-  let vowels = ["a", "e", "i", "o", "u"];
-  let result = "";
+  let result = [];
   let i = 0;
 ```
 
 ```initial
   let i = 0;
-  let vowels = ["a", "e", "i", "o", "u"];
-  let result = "";
+  let result = [];
 ```
 
 ```initial
-  let result = "";
-  let i = 0;
-  let vowels = ["a", "e", "i", "o", "u"];
-```
-
-```initial
-  const vowels = ["a", "e", "i", "o", "u"];
-  let result = "";
+  const result = [];
   let i = 0;
 ```
 
 ```initial
   let i = 0;
-  const vowels = ["a", "e", "i", "o", "u"];
-  let result = "";
-```
-
-```initial
-  let result = "";
-  let i = 0;
-  const vowels = ["a", "e", "i", "o", "u"];
+  const result = [];
 ```
 
 ```transformation
-    if (!vowels.includes(str[i].toLowerCase())) {
-      result += str[i];
-    }
+    result.push(str[i].toUpperCase());
     i++;
 ```
 
 ```final
-  return result;
+  return result.join("");
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (i < str.length) {
     //
   }
@@ -136,7 +109,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (i <= str.length - 1) {
     //
   }
@@ -144,7 +117,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (i + 1 <= str.length) {
     //
   }
@@ -152,7 +125,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (str.length > i) {
     //
   }
@@ -160,7 +133,7 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (str.length - 1 >= i) {
     //
   }
@@ -168,8 +141,166 @@ function removeVowels(str) {
 ```
 
 ```js
-function removeVowels(str) {
+function capitalizeLetters(str) {
   while (str.length >= i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let result = [];
+  let i = str.length - 1;
+```
+
+```initial
+  let i = str.length - 1;
+  let result = [];
+```
+
+```initial
+  const result = [];
+  let i = str.length - 1;
+```
+
+```initial
+  let i = str.length - 1;
+  const result = [];
+```
+
+```transformation
+    result.unshift(str[i].toUpperCase());
+    i--;
+```
+
+```final
+  return result.join("");
+```
+
+```js
+function capitalizeLetters(str) {
+  while (i >= 0) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (i > -1) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (i + 1 > 0) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (0 <= i) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (-1 < i) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (0 < i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let result = [];
+  let i = str.length;
+```
+
+```initial
+  let i = str.length;
+  let result = [];
+```
+
+```initial
+  const result = [];
+  let i = str.length;
+```
+
+```initial
+  let i = str.length;
+  const result = [];
+```
+
+```transformation
+    i--;
+    result.unshift(str[i].toUpperCase());
+```
+
+```final
+  return result.join("");
+```
+
+```js
+function capitalizeLetters(str) {
+  while (i > 0) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (i >= 1) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (i - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (0 < i) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (1 <= i) {
+    //
+  }
+}
+```
+
+```js
+function capitalizeLetters(str) {
+  while (0 <= i - 1) {
     //
   }
 }
