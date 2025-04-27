@@ -219,3 +219,11 @@ function gcd(a, b) {
   }
 }
 ```
+
+```js
+function gcd(a, b) {
+  while (i <= b && i <= a) {
+    //
+  }
+}
+```

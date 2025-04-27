@@ -278,6 +278,14 @@ function gcd(a, b) {
 }
 ```
 
+```js
+function gcd(a, b) {
+  while (i <= b && i <= a) {
+    //
+  }
+}
+```
+
 ======
 
 ```transformation
@@ -568,6 +576,14 @@ function gcd(a, b) {
 ```js
 function gcd(a, b) {
   while (i <= a && i <= b) {
+    //
+  }
+}
+```
+
+```js
+function gcd(a, b) {
+  while (i <= b && i <= a) {
     //
   }
 }

@@ -58,6 +58,10 @@ Write a JavaScript function that returns whether a number is an Armstrong number
   return sum == num;
 ```
 
+```final
+  return num == sum;
+```
+
 ```js
 function isArmstrongNumber(num) {
   while (temp) {

@@ -455,6 +455,10 @@ function isPerfect(n) {
   return sum - n == n;
 ```
 
+```final
+  return n == sum - n;
+```
+
 ```js
 function isPerfect(n) {
   while (i <= n ** 0.5) {
@@ -535,6 +539,10 @@ function isPerfect(n) {
 
 ```final
   return sum == n;
+```
+
+```final
+  return n == sum;
 ```
 
 ```js

@@ -1,3 +1,1053 @@
 ---
-Write a JavaScript function that returns in an array the first N numbers of the Fibonacci sequence using a "while" loop.
+Write a JavaScript function that returns the product of the digits of a number using a "while" loop.
 ---
+
+```initial
+  let product = 1;
+```
+
+```transformation
+    product *= num % 10;
+    num = Math.floor(num / 10);
+```
+
+```final
+
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num != 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num > 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num >= 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 != num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 < num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (1 <= num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 <= num - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let temp = num;
+  let product = 1;
+```
+
+```initial
+  let product = 1;
+  let temp = num;
+```
+
+```transformation
+    product *= temp % 10;
+    temp = Math.floor(temp / 10);
+```
+
+```final
+
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp != 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp > 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp >= 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp - 1 >= 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 != temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 < temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (1 <= temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 <= temp - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let product = 1;
+  let temp = num.toString();
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let product = 1;
+  let temp = num.toString();
+```
+
+```initial
+  let temp = num.toString();
+  let i = 0;
+  let product = 1;
+```
+
+```transformation
+    product *= temp[i];
+    i++;
+```
+
+```final
+
+```
+
+```final
+  return i;
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (i < temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i <= temp.length - 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i + 1 <= temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length > i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length - 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length >= i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let product = 1;
+  let temp = num.toString();
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  let product = 1;
+  let temp = num.toString();
+```
+
+```initial
+  let temp = num.toString();
+  let i = 1;
+  let product = 1;
+```
+
+```transformation
+    product *= temp[i - 1];
+    i++;
+```
+
+```final
+
+```
+
+```final
+  return i;
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (i <= temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i < temp.length + 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i - 1 < temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length >= i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length + 1 > i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length > i - 1) {
+    //
+  }
+}
+```
+
+======
+
+```initial
+  let product = 1;
+```
+
+```transformation
+    product *= num % 10;
+    num = Math.floor(num / 10);
+```
+
+```final
+  return product;
+```
+
+```final
+
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (num == 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num - 1 >= 2) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num > 2) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num - 1 > 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 == num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (2 <= num - 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (2 < num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (1 < num - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let temp = num;
+  let product = 1;
+```
+
+```initial
+  let product = 1;
+  let temp = num;
+```
+
+```transformation
+    product *= temp % 10;
+    temp = Math.floor(temp / 10);
+```
+
+```final
+  return product;
+```
+
+```final
+
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (temp == 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp - 1 >= 2) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp > 2) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp - 1 > 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 == temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (2 <= temp - 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (2 < temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (1 < temp - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let product = 1;
+  let temp = num.toString();
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let product = 1;
+  let temp = num.toString();
+```
+
+```initial
+  let temp = num.toString();
+  let i = 0;
+  let product = 1;
+```
+
+```transformation
+    product *= temp[i];
+    i++;
+```
+
+```final
+  return product;
+```
+
+```final
+
+```
+
+```final
+  return i;
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (i <= temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i < temp.length - 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i + 1 < temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length >= i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length - 1 > i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length > i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let product = 1;
+  let temp = num.toString();
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  let product = 1;
+  let temp = num.toString();
+```
+
+```initial
+  let temp = num.toString();
+  let i = 1;
+  let product = 1;
+```
+
+```transformation
+    product *= temp[i - 1];
+    i++;
+```
+
+```final
+  return product;
+```
+
+```final
+
+```
+
+```final
+  return i;
+```
+
+```final
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (i < temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i <= temp.length + 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i - 1 <= temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length > i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length + 1 >= i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length >= i - 1) {
+    //
+  }
+}
+```
+
+======
+
+```initial
+  let product = 1;
+```
+
+```transformation
+    product *= num % 10;
+    num = Math.floor(num / 10);
+```
+
+```final
+  #(ignore-test)
+  return product;
+```
+
+```final
+  #(ignore-test)
+```
+
+```final
+  #(ignore-test)
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (num < 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num <= 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (num - 1 <= 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 > num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (1 >= num) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 >= num - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let temp = num;
+  let product = 1;
+```
+
+```initial
+  let product = 1;
+  let temp = num;
+```
+
+```transformation
+    product *= temp % 10;
+    temp = Math.floor(temp / 10);
+```
+
+```final
+  #(ignore-test)
+  return product;
+```
+
+```final
+  #(ignore-test)
+```
+
+```final
+  #(ignore-test)
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (temp < 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp <= 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp - 1 <= 0) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 > temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (1 >= temp) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (0 >= temp - 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let product = 1;
+  let temp = num.toString();
+  let i = 0;
+```
+
+```initial
+  let i = 0;
+  let product = 1;
+  let temp = num.toString();
+```
+
+```initial
+  let temp = num.toString();
+  let i = 0;
+  let product = 1;
+```
+
+```transformation
+    product *= temp[i];
+    i++;
+```
+
+```final
+  #(ignore-test)
+  return product;
+```
+
+```final
+  #(ignore-test)
+```
+
+```final
+  #(ignore-test)
+  return i;
+```
+
+```final
+  #(ignore-test)
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (i > temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i >= temp.length - 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i + 1 >= temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length < i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length - 1 <= i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length <= i + 1) {
+    //
+  }
+}
+```
+
+===
+
+```initial
+  let product = 1;
+  let temp = num.toString();
+  let i = 1;
+```
+
+```initial
+  let i = 1;
+  let product = 1;
+  let temp = num.toString();
+```
+
+```initial
+  let temp = num.toString();
+  let i = 1;
+  let product = 1;
+```
+
+```transformation
+    product *= temp[i - 1];
+    i++;
+```
+
+```final
+  #(ignore-test)
+  return product;
+```
+
+```final
+  #(ignore-test)
+```
+
+```final
+  #(ignore-test)
+  return i;
+```
+
+```final
+  #(ignore-test)
+  return num;
+```
+
+```js
+function productOfDigits(num) {
+  while (i >= temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i > temp.length + 1) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (i - 1 > temp.length) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length <= i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length + 1 < i) {
+    //
+  }
+}
+```
+
+```js
+function productOfDigits(num) {
+  while (temp.length < i - 1) {
+    //
+  }
+}
+```
