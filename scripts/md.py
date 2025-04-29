@@ -20,7 +20,6 @@ def js_codes(content):
         transformations = []
         finals = []
         codes = []
-        infinities = []
 
         for lang, code in sections:
             if lang == 'initial':

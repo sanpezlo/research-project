@@ -4,34 +4,101 @@ from gen_code import gen
 from gen_tests import read_lines, gen_tests, write_lines
 import os
 import subprocess
+import polars as pl
+from typing import TypedDict
+from tag import TAGS, Tag
+from group import Group
+from read import read_problem, read_questions
+
+
+PROBLEMS = 29
+
+
+class Problem(TypedDict):
+    id: int
+    questions: list[str]
+    answers: dict[Tag, list[str]]
+
+
+def dataset(problems: list[Problem]):
+    rows = []
+    for problem in problems:
+        for tag, ans_list in problem["answers"].items():
+            for ans in ans_list:
+                rows.append({
+                    "problem_id": problem["id"],
+                    "question": problem["questions"][0],
+                    "answer": ans,
+                    "tag": tag
+                })
+    dataframe(rows)
+
+
+def dataframe(rows):
+    df = pl.DataFrame(rows).unique(
+        subset=["problem_id", "question", "answer", "tag"])
+
+    balanced_chunks = []
+    for pid in df["problem_id"].unique().to_list():
+        sub = df.filter(pl.col("problem_id") == pid)
+        counts = {
+            et: sub.filter(pl.col("tag") == et).height
+            for et in sub["tag"].unique().to_list()
+        }
+        min_count = min(counts.values())
+        print(counts.values(), min_count)
+        for et in counts:
+            group = sub.filter(pl.col("tag") == et)
+            sampled = group.sample(n=min_count, shuffle=True)
+            balanced_chunks.append(sampled)
+
+    balanced_df = pl.concat(
+        balanced_chunks).with_row_index(name="id", offset=1)
+
+    balanced_df.write_csv(
+        f"/workspaces/research-project/data/xlsx/balanced.csv")
+
+
+def transpile(problem: dict[Tag, list[list[Group]]], tag: Tag) -> list[str]:
+    flags = [flag for flag in Tag if flag in tag]
+    combinations: list[str] = []
+    if (len(flags) < 2):
+        for block in problem[tag]:
+            for i, group in enumerate(block):
+                result = Group.join(problem[Tag.CORRECT][0][i], group)
+                combinations += Group.combine(result)
+    else:
+        before = [problem[Tag.CORRECT][0]]
+        for flag in flags:
+            temp_tag: list[list[Group]] = []
+            for before_block in before:
+                for block in problem[flag]:
+                    temp_block: list[Group] = []
+                    for i, group in enumerate(block):
+                        temp_block.append(Group.join(before_block[i], group))
+                    temp_tag.append(temp_block)
+            before = temp_tag
+        for block in before:
+            for i, group in enumerate(block):
+                combinations += Group.combine(group)
+    return combinations
 
 
 def gen_dataframe():
-    problems = 31
-
-    final = pd.DataFrame()
-
-    for i in range(1, problems + 1):
-        md = read(
-            f"/workspaces/research-project/data/problems/{i:02d}/correct.md")
-        codes = gen(md["codes"], "")
-
-        df = pd.DataFrame(codes, columns=["code"])
-        df.insert(0, "problem", md["problem"])
-
-        final = pd.concat([final, df], ignore_index=True)
-
-    final.to_excel(f"/workspaces/research-project/data/xlsx/all.xlsx")
-
-
-def dataframe(id_problem):
-    md = read(
-        f"/workspaces/research-project/data/problems/{id_problem}/correct.md")
-    codes = gen(md["codes"], "")
-    df = pd.DataFrame(codes, columns=["code"])
-    df.insert(0, "problem", md["problem"])
-    df.to_excel(
-        f"/workspaces/research-project/data/problems/{id_problem}/{id_problem}.xlsx")
+    problems: list[Problem] = []
+    for i in range(1, PROBLEMS + 1):
+        problem: Problem = {
+            "id": i,
+            "questions": read_questions(i),
+            "answers": {}
+        }
+        read = read_problem(i)
+        for t in range(TAGS):
+            tag = Tag(t)
+            combinations = transpile(read, tag)
+            problem["answers"][tag] = combinations
+        problems.append(problem)
+    dataset(problems)
 
 
 def write_tests(id_problem, type):
