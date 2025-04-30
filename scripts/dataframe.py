@@ -61,7 +61,7 @@ def dataframe(problems: list[Problem]):
 
 def balanced_dataframe(rows):
     df = pl.DataFrame(rows).unique(
-        subset=["problem_id", "answer", "tag"])
+        subset=["problem_id", "answer", "tag"], maintain_order=True)
 
     balanced_chunks = []
     for pid in df["problem_id"].unique().to_list():
@@ -74,7 +74,7 @@ def balanced_dataframe(rows):
         print(counts.values(), min_count)
         for et in counts:
             group = sub.filter(pl.col("tag") == et)
-            sampled = group.sample(n=min_count, shuffle=True)
+            sampled = group.sample(n=min_count, seed=2025)
             balanced_chunks.append(sampled)
 
     balanced_df = pl.concat(
