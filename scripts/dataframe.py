@@ -71,6 +71,7 @@ def balanced_dataframe(rows):
             for et in sub["tag"].unique().to_list()
         }
         min_count = min(counts.values())
+        min_count = min(min_count, 35)
         print(counts.values(), min_count)
         for et in counts:
             group = sub.filter(pl.col("tag") == et)
@@ -81,4 +82,4 @@ def balanced_dataframe(rows):
         balanced_chunks).with_row_index(name="id", offset=1)
 
     balanced_df.write_csv(
-        f"/workspaces/research-project/data/xlsx/balanced.csv")
+        f"/workspaces/research-project/data/xlsx/balanced_8000.csv")

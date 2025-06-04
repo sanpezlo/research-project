@@ -1,0 +1,59 @@
+question
+"Write a JavaScript function that returns the factorial of a number using a ""while"" loop.
+"
+"Write a JavaScript function that returns the sum of the numbers from 1 to N using a ""while"" loop.
+"
+"Write a JavaScript function that returns in an array the numbers from 1 to N using a ""while"" loop.
+"
+"Write a JavaScript function that returns whether a number is prime using a ""while"" loop.
+"
+"Write a JavaScript function that returns the average of an array of numbers using a ""while"" loop.
+"
+"Write a JavaScript function that returns the smallest number from an array of numbers using a ""while"" loop.
+"
+"Write a JavaScript function that returns the largest number from an array of numbers using a ""while"" loop.
+"
+"Write a JavaScript function that returns in an array the first N numbers of the Fibonacci sequence using a ""while"" loop.
+"
+"Write a JavaScript function that returns in an array the odd numbers from 1 to N using a ""while"" loop.
+"
+"Write a JavaScript function that returns the reversal of a number with two or more digits using a ""while"" loop.
+"
+"Write a JavaScript function that returns in an array the results of the multiplication table of a number from 1 to 10 using a ""while"" loop.
+"
+"Write a JavaScript function that returns the power of a given base raised to a given exponent using a ""while"" loop.
+"
+"Write a JavaScript function that returns whether a number is perfect using a ""while"" loop.
+"
+"Write a JavaScript function that returns the greatest common divisor of two numbers using a ""while"" loop.
+"
+"Write a JavaScript function that returns in an array the even numbers from 1 to N using a while loop.
+"
+"Write a JavaScript function that returns in an array all uppercase letters of the alphabet from 'A' to 'Z' using a ""while"" loop.
+"
+"Write a JavaScript function that returns the square, cube and square root of all numbers from 1 to N using a ""while"" loop.
+"
+"Write a JavaScript function that counts the number of infants (<5), children (≤17) and adults in an array, respectively, given an array of ages using a while loop.
+"
+"Write a JavaScript function that returns in an array the first and last digit respectively of any number greater than or equal to 2 digits using a ""while"" loop.
+"
+"Write a JavaScript function that returns the product of the digits of a number using a ""while"" loop.
+"
+"Write a JavaScript function that returns whether a number is an Armstrong number using a ""while"" loop.
+"
+"Write a JavaScript function that returns the length of a number using a ""while"" loop.
+"
+"Write a JavaScript function that returns in an array all factors of a number using a ""while"" loop.
+"
+"Write a JavaScript function that returns the conversion from binary to decimal using a ""while"" loop.
+"
+"Write a JavaScript function that returns in an array the first N numbers of the sequence: a(N) = a^N + a (N-1) + N using a ""while"" loop.
+"
+"Write a JavaScript function that returns a string in reverse order using a ""while"" loop.
+"
+"Write a JavaScript function that returns the sum of all integers between 1 and N, divisible by 9, using a ""while"" loop.
+"
+"Write a JavaScript function that given a string returns it without vowels using a ""while"" loop.
+"
+"Write a JavaScript function that given a string, returns a string with each letter capitalized using a ""while"" loop.
+"
