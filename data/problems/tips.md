@@ -101,7 +101,7 @@ agregar `#(ignore-test)` en `final` si son todas o en cada codigo.
 
 Duplicar anterior
 
-cambion en el `while`
+cambio en el `while`
 
 - Colocar retorno correcto.
 - Cambiar de `<` a `<=` o `>` a `>=` y viceversa, en algunos casos pasan todos los test, por lo que no es una solucion valida.
@@ -310,7 +310,7 @@ Sin embargo en el codigo anterior, el `return` es importante ya que el ciclo no 
 
 ---
 
-TODO: el problema 4, en final (o initial 14), hay una seccion vacia, porque no hay errores finales posibles cambiando los operadores del while, por lo tanto a la hora de hacer las mezclas de los diferentes tipos de errores, deben verificar que no esten vacios.
+TODO: el problema 4, en final (o initial 14, donde no tiene initial), hay una seccion vacia, porque no hay errores finales posibles cambiando los operadores del while, por lo tanto a la hora de hacer las mezclas de los diferentes tipos de errores, deben verificar que no esten vacios.
 
 ```
 ===
@@ -327,3 +327,5 @@ ejem (error initial con error final), al hacer esto sin verificar daria algunos 
 - Eliminar `#(ignore-test)` y agregar una forma para verificar que se produce un ciclo infinito, asi se evita que pase por alto una solucion marcado con `#(ignore-test)`.
 
 - Algunos problemas se quedaron fuera, por incompatibilidad con el sistema actual, de generacion de soluciones. Sea porque no tenian `initial`, `transformation` o `final`.
+
+- Hacer test para todos las etiquetas combinadas, si no pasan los test no se añaden al dataset.

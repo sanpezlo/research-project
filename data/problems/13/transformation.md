@@ -1013,46 +1013,50 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum += i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i != 0) {
       sum += i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum -= i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum *= i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum /= i;
     }
 ```
 
 ```final
-  #(ignore-test)
   return sum == n;
 ```
 
 ```final
-  #(ignore-test)
   return n == sum;
 ```
 
@@ -1157,6 +1161,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum += i;
       if (i != n / i) {
@@ -1166,10 +1171,12 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i != 0) {
       sum += i;
       if (i == n / i) {
@@ -1179,6 +1186,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum -= i;
       if (i != n / i) {
@@ -1188,6 +1196,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum *= i;
       if (i != n / i) {
@@ -1197,6 +1206,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum /= i;
       if (i != n / i) {
@@ -1206,12 +1216,10 @@ function isPerfect(n) {
 ```
 
 ```final
-  #(ignore-test)
   return sum - n == n;
 ```
 
 ```final
-  #(ignore-test)
   return n == sum - n;
 ```
 
@@ -1284,6 +1292,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum += i;
       if (i != n / i) {
@@ -1293,10 +1302,12 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i != 0) {
       sum += i;
       if (i == n / i) {
@@ -1306,6 +1317,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum *= i;
       if (i != n / i) {
@@ -1315,6 +1327,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum -= i;
       if (i != n / i) {
@@ -1324,6 +1337,7 @@ function isPerfect(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % i == 0) {
       sum /= i;
       if (i != n / i) {
@@ -1333,12 +1347,10 @@ function isPerfect(n) {
 ```
 
 ```final
-  #(ignore-test)
   return sum == n;
 ```
 
 ```final
-  #(ignore-test)
   return n == sum;
 ```
 

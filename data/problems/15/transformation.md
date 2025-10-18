@@ -218,19 +218,21 @@ function evenNumbers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i);
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -325,35 +327,39 @@ function evenNumbers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 != 1) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 == 0) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 == 1) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 != 0) {
       result.push(i);
     }
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

@@ -262,19 +262,21 @@ function count(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     numbers.push(i);
 ```
 
 ```transformation
+    #(ignore-test)
     numbers.push(n);
 ```
 
 ```final
-  #(ignore-test)
   return numbers;
 ```
 
@@ -339,19 +341,21 @@ function count(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     numbers = numbers.concat([i]);
 ```
 
 ```transformation
+    #(ignore-test)
     numbers = numbers.concat([n]);
 ```
 
 ```final
-  #(ignore-test)
   return numbers;
 ```
 
@@ -426,19 +430,21 @@ function count(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     numbers.push(i);
 ```
 
 ```transformation
+    #(ignore-test)
     numbers.push(n);
 ```
 
 ```final
-  #(ignore-test)
   return numbers;
 ```
 

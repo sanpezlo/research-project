@@ -369,29 +369,32 @@ function countAndSumDivisibleBy9(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 9 == 0) {
       sum += i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (i / 9 == 0) {
       sum += i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 9 != 0) {
       sum += i;
     }
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -456,29 +459,32 @@ function countAndSumDivisibleBy9(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 9 == 0) {
       sum += i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (i / 9 == 0) {
       sum += i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 9 != 0) {
       sum += i;
     }
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -585,29 +591,32 @@ function countAndSumDivisibleBy9(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % 9 == 0) {
       sum += n;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (n / 9 == 0) {
       sum += n;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (n % 9 != 0) {
       sum += n;
     }
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 

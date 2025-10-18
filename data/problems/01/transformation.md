@@ -455,43 +455,51 @@ function factorial(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result += i;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result += n;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= n;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -556,43 +564,51 @@ function factorial(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result += i;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result += n;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= n;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -651,43 +667,51 @@ function factorial(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result += n;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result += n;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= n;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -768,59 +792,71 @@ function factorial(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= i + 1;
 ```
 
 ```transformation
+    #(ignore-test)
     result += i + 1;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= i + 1;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= i + 1;
 ```
 
 ```transformation
+    #(ignore-test)
     result += i;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result += n;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= n;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

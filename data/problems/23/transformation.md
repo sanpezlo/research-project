@@ -155,29 +155,32 @@ function factorsOfNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i == 0) {
       factors.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i != 0) {
       factors.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i == 0) {
       factors.push(i);
     }
 ```
 
 ```final
-  #(ignore-test)
   return factors;
 ```
 

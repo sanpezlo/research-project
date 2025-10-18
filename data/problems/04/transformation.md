@@ -1353,191 +1353,221 @@ function isPrime(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i == 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i != 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i == 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i == 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i == 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i == 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i != 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i != 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i != 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i != 0) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return true;
 ```
 
@@ -1928,131 +1958,151 @@ function isPrime(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i == 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i == 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i != 0 && i == num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i != 0 && i != num) {
       return false;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return true;
 ```
 
@@ -2261,71 +2311,81 @@ function isPrime(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i == 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num % i != 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i == 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i == 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i == 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i == 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num / i != 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num * i != 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num + i != 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (num - i != 0) {
       count++;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   if (count > 2 || count < 2) {
     return false;
   } else {
@@ -2334,7 +2394,6 @@ function isPrime(num) {
 ```
 
 ```final
-  #(ignore-test)
   if (count >= 3 || count <= 1) {
     return false;
   } else {
@@ -2343,7 +2402,6 @@ function isPrime(num) {
 ```
 
 ```final
-  #(ignore-test)
   if (count == 2) {
     return true;
   } else {
@@ -2352,12 +2410,10 @@ function isPrime(num) {
 ```
 
 ```final
-  #(ignore-test)
   return count == 2;
 ```
 
 ```final
-  #(ignore-test)
   return !(count != 2);
 ```
 

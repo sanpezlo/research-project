@@ -382,19 +382,21 @@ function productOfDigits(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     product *= num % 10;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     product *= num / 10;
 ```
 
 ```final
-  #(ignore-test)
   return product;
 ```
 
@@ -483,19 +485,21 @@ function productOfDigits(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     product *= temp % 10;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     product *= temp / 10;
 ```
 
 ```final
-  #(ignore-test)
   return product;
 ```
 
@@ -592,27 +596,31 @@ function productOfDigits(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     product *= temp[i];
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     product += temp[i];
 ```
 
 ```transformation
+    #(ignore-test)
     product -= temp[i];
 ```
 
 ```transformation
+    #(ignore-test)
     product /= temp[i];
 ```
 
 ```final
-  #(ignore-test)
   return product;
 ```
 
@@ -685,31 +693,36 @@ function productOfDigits(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     product *= temp[i - 1];
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     product *= temp[i];
 ```
 
 ```transformation
+    #(ignore-test)
     product /= temp[i - 1];
 ```
 
 ```transformation
+    #(ignore-test)
     product += temp[i - 1];
 ```
 
 ```transformation
+    #(ignore-test)
     product -= temp[i - 1];
 ```
 
 ```final
-  #(ignore-test)
   return product;
 ```
 

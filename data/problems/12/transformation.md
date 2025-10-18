@@ -529,31 +529,36 @@ function power(base, n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result *= base;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result += base;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= base;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= base;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -628,31 +633,36 @@ function power(base, n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result *= base;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result += base;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= base;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= base;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -727,31 +737,36 @@ function power(base, n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result *= base;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= base;
 ```
 
 ```transformation
+    #(ignore-test)
     result += base;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= base;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -810,31 +825,36 @@ function power(base, n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result *= base;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result += base;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= base;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= base;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -917,31 +937,36 @@ function power(base, n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result *= base;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     result += base;
 ```
 
 ```transformation
+    #(ignore-test)
     result -= base;
 ```
 
 ```transformation
+    #(ignore-test)
     result /= base;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

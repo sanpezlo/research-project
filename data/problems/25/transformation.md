@@ -155,83 +155,99 @@ function sequence(a, n) {
 ```
 
 ```transformation
+    #(ignore-test)
     let value = a ** i + a * (i - 1) + i;
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     let value = a ** i + a * (i - 1) + i;
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(a ** i + a * (i - 1) + i);
 ```
 
 ```transformation
+    #(ignore-test)
     let value = Math.pow(a, i) + a * (i - 1) + i;
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     let value = Math.pow(a, i) + a * (i - 1) + i;
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(Math.pow(a, i) + a * (i - 1) + i);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     let value = a ** i + a * (i - 1);
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     let value = a ** i + a * (i - 1);
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(a ** i + a * (i - 1));
 ```
 
 ```transformation
+    #(ignore-test)
     let value = Math.pow(a, i) + a * (i - 1);
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     let value = Math.pow(a, i) + a * (i - 1);
     result.push(value);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(Math.pow(a, i) + a * (i - 1));
 ```
 
 ```transformation
+    #(ignore-test)
     let value = a ** i + a * (i - 1) + i;
 ```
 
 ```transformation
+    #(ignore-test)
     let value = a ** i + a * (i - 1) + i;
 ```
 
 ```transformation
+    #(ignore-test)
     let value = Math.pow(a, i) + a * (i - 1) + i;
 ```
 
 ```transformation
+    #(ignore-test)
     let value = Math.pow(a, i) + a * (i - 1) + i;
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

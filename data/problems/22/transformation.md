@@ -495,15 +495,16 @@ function lengthOfNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     length++;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return length;
 ```
 
@@ -586,15 +587,16 @@ function lengthOfNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     length++;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return length;
 ```
 
@@ -653,15 +655,16 @@ function lengthOfNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     length++;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return length + 1;
 ```
 
@@ -752,15 +755,16 @@ function lengthOfNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     length++;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return length;
 ```
 
@@ -849,15 +853,16 @@ function lengthOfNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     length++;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return length;
 ```
 
@@ -922,15 +927,16 @@ function lengthOfNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     length++;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return length + 1;
 ```
 

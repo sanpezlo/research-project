@@ -159,72 +159,83 @@ function isArmstrongNumber(num) {
 ```
 
 ```transformation
+    #(ignore-test)
     sum += Math.pow(temp % 10, digits);
 ```
 
 ```transformation
+    #(ignore-test)
     sum += (temp % 10) ** digits;
 ```
 
 ```transformation
+    #(ignore-test)
     let digit = temp % 10;
     sum += digit ** digits;
 ```
 
 ```transformation
+    #(ignore-test)
     let digit = temp % 10;
     sum += Math.pow(digit, digits);
 ```
 
 ```transformation
+    #(ignore-test)
     const digit = temp % 10;
     sum += digit ** digits;
 ```
 
 ```transformation
+    #(ignore-test)
     const digit = temp % 10;
     sum += Math.pow(digit, digits);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += Math.pow(temp / 10, digits);
 ```
 
 ```transformation
+    #(ignore-test)
     sum += (temp / 10) ** digits;
 ```
 
 ```transformation
+    #(ignore-test)
     let digit = temp / 10;
     sum += digit ** digits;
 ```
 
 ```transformation
+    #(ignore-test)
     let digit = temp / 10;
     sum += Math.pow(digit, digits);
 ```
 
 ```transformation
+    #(ignore-test)
     const digit = temp / 10;
     sum += digit ** digits;
 ```
 
 ```transformation
+    #(ignore-test)
     const digit = temp / 10;
     sum += Math.pow(digit, digits);
 ```
 
 ```final
-  #(ignore-test)
   return sum == num;
 ```
 
 ```final
-  #(ignore-test)
   return num == sum;
 ```
 

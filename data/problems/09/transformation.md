@@ -232,15 +232,16 @@ function oddNumbers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i);
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -335,59 +336,67 @@ function oddNumbers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 == 0) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (0 == i % 2) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 != 1) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (1 != i % 2) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 != 0) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (0 != i % 2) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (i % 2 == 1) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (1 == i % 2) {
       result.push(i);
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

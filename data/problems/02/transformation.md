@@ -1059,43 +1059,51 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -1160,43 +1168,51 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -1235,59 +1251,71 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i + 1;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i + 1;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i + 1;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i + 1;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -1346,27 +1374,31 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -1537,43 +1569,51 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -1744,43 +1784,51 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -1845,43 +1893,51 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -1964,27 +2020,31 @@ function sum(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= n;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += n;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 

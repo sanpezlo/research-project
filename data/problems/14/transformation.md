@@ -289,15 +289,16 @@ function gcd(a, b) {
 ======
 
 ```transformation
+    #(ignore-test)
     a = b;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return a;
 ```
 
@@ -388,10 +389,12 @@ function gcd(a, b) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (a < b) {
       a -= b;
     } else {
@@ -400,6 +403,7 @@ function gcd(a, b) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (b > a) {
       a -= b;
     } else {
@@ -408,6 +412,7 @@ function gcd(a, b) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (b <= a) {
       b -= a;
     } else {
@@ -416,7 +421,6 @@ function gcd(a, b) {
 ```
 
 ```final
-  #(ignore-test)
   return a;
 ```
 
@@ -541,35 +545,39 @@ function gcd(a, b) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (a % i == 0 && b % i == 0) {
       result = i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (b % i == 0 && a % i == 0) {
       result = i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (a % i != 0 && b % i != 0) {
       result = i;
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (b % i != 0 && a % i != 0) {
       result = i;
     }
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

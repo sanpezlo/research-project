@@ -131,51 +131,61 @@ function multiplicationTable(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n * i);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i * n);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n * i);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i * n);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n + (i + 1));
 ```
 
 ```transformation
+    #(ignore-test)
     result.push((i + 1) + n);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n - (i + 1));
 ```
 
 ```transformation
+    #(ignore-test)
     result.push((i + 1) - n);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n / (i + 1));
 ```
 
 ```transformation
+    #(ignore-test)
     result.push((i + 1) / n);
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -250,43 +260,51 @@ function multiplicationTable(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n * (i + 1));
 ```
 
 ```transformation
+    #(ignore-test)
     result.push((i + 1) * n);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n + i);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i + n);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n / i);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i / n);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(n - i);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(i - n);
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

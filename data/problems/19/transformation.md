@@ -103,11 +103,11 @@ function firstLastDigit(num) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return [firstDigit, lastDigit];
 ```
 

@@ -866,47 +866,56 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i - 1]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i - 2]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i - 1] + fib[i]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i] + fib[i - 1]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i] + fib[i - 2]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i - 2] + fib[i]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i - 1] + fib[i - 2]);
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(fib[i - 2] + fib[i - 1]);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return fib;
 ```
 
@@ -1017,6 +1026,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     let temp = i + j;
     i = j;
     j = temp;
@@ -1024,6 +1034,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     let temp = i + j;
     i = j;
     fib.push(i);
@@ -1031,6 +1042,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     let temp = i + j;
     j = temp;
@@ -1038,6 +1050,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     let temp = i - j;
     i = j;
@@ -1045,6 +1058,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     let temp = i * j;
     i = j;
@@ -1052,6 +1066,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     let temp = i / j;
     i = j;
@@ -1059,6 +1074,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     let temp = i + j;
     i = j;
@@ -1066,11 +1082,11 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return fib;
 ```
 
@@ -1161,6 +1177,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     if (i == 0) {
       i++;
@@ -1170,6 +1187,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     if (i == 0) {
       i++;
@@ -1179,6 +1197,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     if (i == 0) {
       i++;
@@ -1188,6 +1207,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     if (i == 0) {
       i++;
@@ -1197,6 +1217,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     if (i != 0) {
       i++;
@@ -1206,6 +1227,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     fib.push(i);
     if (i == 0) {
       i++;
@@ -1215,11 +1237,11 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return fib;
 ```
 
@@ -1294,6 +1316,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1302,6 +1325,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1310,6 +1334,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1318,6 +1343,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1326,6 +1352,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1334,6 +1361,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1342,6 +1370,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0) {
       fib.push(i);
     } else {
@@ -1350,6 +1379,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 1) {
       fib.push(i);
     } else {
@@ -1358,6 +1388,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1366,6 +1397,7 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (i == 0 || i == 1) {
       fib.push(i);
     } else {
@@ -1374,11 +1406,11 @@ function fibonacci(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```final
-  #(ignore-test)
   return fib;
 ```
 
@@ -1477,11 +1509,10 @@ function fibonacci(n) {
 ```
 
 ```transformation
-
+    #(ignore-test)
 ```
 
 ```final
-  #(ignore-test)
   return fib;
 ```
 

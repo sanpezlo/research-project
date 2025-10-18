@@ -6,20 +6,28 @@ from dataframe import gen_dataframe
 
 
 def write_tests(id_problem, type):
-    md = read(
-        f"/workspaces/research-project/data/problems/{id_problem}/{type}.md")
+    md = read(f"/workspaces/research-project/data/problems/{id_problem}/{type}.md")
+    test_type = "tests" if type == "correct" else "error"
     tests_lines = read_lines(
-        f"/workspaces/research-project/tests/{id_problem}/{"tests" if type == "correct" else "error"}.js")
+        f"/workspaces/research-project/tests/{id_problem}/{test_type}.js"
+    )
     tests = gen_tests(tests_lines, md["codes"])
-    write_lines(
-        f"/workspaces/research-project/tests/{id_problem}/_{type}.js", tests)
+    write_lines(f"/workspaces/research-project/tests/{id_problem}/_{type}.js", tests)
 
 
 def run_tests(id_problem, type):
     write_tests(id_problem, type)
 
-    correct = subprocess.Popen(
-        ["node", f"/workspaces/research-project/tests/{id_problem}/_{type}.js"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT).stdout.read().decode().strip()
+    correct = (
+        subprocess.Popen(
+            ["node", f"/workspaces/research-project/tests/{id_problem}/_{type}.js"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+        )
+        .stdout.read()
+        .decode()
+        .strip()
+    )
 
     if correct == "":
         return f"{type}: All tests passed."
@@ -34,14 +42,13 @@ def window(display, choices):
     global result
 
     while True:
-        os.system('cls' if os.name == 'nt' else "printf '\033c'")
+        os.system("cls" if os.name == "nt" else "printf '\033c'")
 
         if result:
             print(result)
             result = None
 
-        print("\n".join([line.strip()
-              for line in display.splitlines()]).strip())
+        print("\n".join([line.strip() for line in display.splitlines()]).strip())
 
         choice = input("Enter your choice: ")
 

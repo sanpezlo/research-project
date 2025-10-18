@@ -179,6 +179,10 @@ cython_debug/
 
 */**/_all.js
 */**/_initial.js
-*/**/_correct.js
-*/**/_final.js
 */**/_transformation.js
+*/**/_transformation|initial.js
+*/**/_final.js
+*/**/_final|initial.js
+*/**/_final|transformation.js
+*/**/_final|transformation|initial.js
+*/**/_correct.js

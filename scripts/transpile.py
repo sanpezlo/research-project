@@ -5,7 +5,7 @@ from group import Group
 def transpile(problem: dict[Tag, list[list[Group]]], tag: Tag) -> list[str]:
     flags = [flag for flag in Tag if flag in tag]
     combinations: list[str] = []
-    if (len(flags) < 2):
+    if len(flags) < 2:
         for block in problem[tag]:
             for i, group in enumerate(block):
                 result = Group.join(problem[Tag.CORRECT][0][i], group)

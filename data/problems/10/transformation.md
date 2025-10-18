@@ -823,70 +823,82 @@ function reverseNumber(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed * 10 + (n % 10);
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
     reversed += n % 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = n % 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed = remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed = reversed * 10;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed *= 10;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed += remainder;
 ```
 
 ```final
-  #(ignore-test)
   return reversed;
 ```
 
@@ -1085,66 +1097,77 @@ function reverseNumber(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed * 10 + (n % 10);
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
     reversed += n % 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed = reversed * 10;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed = reversed * 10;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed *= 10;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed *= 10;
 ```
 
 ```final
-  #(ignore-test)
   return isNegative ? -reversed : reversed;
 ```
 
@@ -1343,79 +1366,90 @@ function reverseNumber(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed * 10 + (n % 10);
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
     reversed += n % 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed * 10 + (n / 10);
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n / 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n / 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
     reversed += n / 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n / 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n / 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```final
-  #(ignore-test)
   reversed = reversed * 10 + n;
   return isNegative ? -reversed : reversed;
 ```
 
 ```final
-  #(ignore-test)
   reversed *= 10;
   reversed += n;
   return isNegative ? -reversed : reversed;
@@ -1524,73 +1558,85 @@ function reverseNumber(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed * 10 + (n % 10);
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
     reversed += n % 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n % 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed * 10 + (n / 10);
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n / 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n / 10;
     reversed = reversed * 10 + remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= 10;
     reversed += n / 10;
 ```
 
 ```transformation
+    #(ignore-test)
     let remainder = n / 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```transformation
+    #(ignore-test)
     const remainder = n / 10;
     reversed *= 10;
     reversed += remainder;
 ```
 
 ```final
-  #(ignore-test)
   return reversed * 10 + n;
 ```
 

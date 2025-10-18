@@ -257,39 +257,45 @@ function uppercaseLetters() {
 ```
 
 ```transformation
+    #(ignore-test)
     let letter = String.fromCharCode(charCode);
     result.push(letter);
 ```
 
 ```transformation
+    #(ignore-test)
     const letter = String.fromCharCode(charCode);
     result.push(letter);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(String.fromCharCode(charCode));
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     let letter = String.fromCharCode(charCode + 1);
     result.push(letter);
 ```
 
 ```transformation
+    #(ignore-test)
     const letter = String.fromCharCode(charCode + 1);
     result.push(letter);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(String.fromCharCode(charCode + 1));
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -412,19 +418,21 @@ function uppercaseLetters() {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(letter);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(letter);
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

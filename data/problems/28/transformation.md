@@ -196,35 +196,39 @@ function removeVowels(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (!"aeiouAEIOU".includes(str[i])) {
       result += str[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (!"aeiou".includes(str[i].toLowerCase())) {
       result += str[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if ("aeiouAEIOU".includes(str[i])) {
       result += str[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if ("aeiou".includes(str[i].toLowerCase())) {
       result += str[i];
     }
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -315,23 +319,25 @@ function removeVowels(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (!vowels.includes(str[i].toLowerCase())) {
       result += str[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (vowels.includes(str[i].toLowerCase())) {
       result += str[i];
     }
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

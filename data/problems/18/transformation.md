@@ -291,6 +291,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] < 5) {
       babies++;
     } else if (ages[i] <= 17) {
@@ -301,6 +302,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] >= 18) {
       adults++;
     } else if (ages[i] > 4) {
@@ -311,6 +313,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] <= 4) {
       babies++;
     } else if (ages[i] < 18) {
@@ -321,6 +324,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] > 17) {
       adults++;
     } else if (ages[i] >= 5) {
@@ -331,10 +335,12 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] <= 5) {
       babies++;
     } else if (ages[i] < 17) {
@@ -345,6 +351,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] > 18) {
       adults++;
     } else if (ages[i] >= 4) {
@@ -355,6 +362,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] < 4) {
       babies++;
     } else if (ages[i] <= 18) {
@@ -365,6 +373,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i] >= 17) {
       adults++;
     } else if (ages[i] > 5) {
@@ -375,7 +384,6 @@ function countAgeGroups(ages) {
 ```
 
 ```final
-  #(ignore-test)
   return [babies, children, adults];
 ```
 
@@ -458,6 +466,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] < 5) {
       babies++;
     } else if (ages[i - 1] <= 17) {
@@ -468,6 +477,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] >= 18) {
       adults++;
     } else if (ages[i - 1] > 4) {
@@ -478,6 +488,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] <= 4) {
       babies++;
     } else if (ages[i - 1] < 18) {
@@ -488,6 +499,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] > 17) {
       adults++;
     } else if (ages[i - 1] >= 5) {
@@ -498,10 +510,12 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] <= 5) {
       babies++;
     } else if (ages[i - 1] < 17) {
@@ -512,6 +526,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] > 18) {
       adults++;
     } else if (ages[i - 1] >= 4) {
@@ -522,6 +537,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] < 4) {
       babies++;
     } else if (ages[i - 1] <= 18) {
@@ -532,6 +548,7 @@ function countAgeGroups(ages) {
 ```
 
 ```transformation
+    #(ignore-test)
     if (ages[i - 1] >= 17) {
       adults++;
     } else if (ages[i - 1] > 5) {
@@ -542,7 +559,6 @@ function countAgeGroups(ages) {
 ```
 
 ```final
-  #(ignore-test)
   return [babies, children, adults];
 ```
 

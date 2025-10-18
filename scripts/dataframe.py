@@ -17,11 +17,7 @@ class Problem(TypedDict):
 def gen_dataframe():
     problems: list[Problem] = []
     for i in range(1, PROBLEMS + 1):
-        problem: Problem = {
-            "id": i,
-            "questions": read_questions(i),
-            "answers": {}
-        }
+        problem: Problem = {"id": i, "questions": read_questions(i), "answers": {}}
         read = read_problem(i)
         for t in range(TAGS):
             tag = Tag(t)
@@ -34,10 +30,9 @@ def gen_dataframe():
 def clear(combinations: list[str]):
     result = []
     for combination in combinations:
-        if re.search(r'#\(ignore-test\)', combination) is not None:
-            clean = re.sub(
-                r'#\(ignore-test\)', '', combination, flags=re.MULTILINE)
-            clean = re.sub(r'\n\s*\n', '\n', clean)
+        if re.search(r"#\(ignore-test\)", combination) is not None:
+            clean = re.sub(r"#\(ignore-test\)", "", combination, flags=re.MULTILINE)
+            clean = re.sub(r"\n\s*\n", "\n", clean)
             result.append(clean)
             continue
         else:
@@ -50,18 +45,21 @@ def dataframe(problems: list[Problem]):
     for problem in problems:
         for tag, ans_list in problem["answers"].items():
             for ans in ans_list:
-                rows.append({
-                    "problem_id": problem["id"],
-                    "question": problem["questions"][0],
-                    "answer": ans,
-                    "tag": tag
-                })
+                rows.append(
+                    {
+                        "problem_id": problem["id"],
+                        "question": problem["questions"][0],
+                        "answer": ans,
+                        "tag": tag,
+                    }
+                )
     balanced_dataframe(rows)
 
 
 def balanced_dataframe(rows):
     df = pl.DataFrame(rows).unique(
-        subset=["problem_id", "answer", "tag"], maintain_order=True)
+        subset=["problem_id", "answer", "tag"], maintain_order=True
+    )
 
     balanced_chunks = []
     for pid in df["problem_id"].unique().to_list():
@@ -78,8 +76,6 @@ def balanced_dataframe(rows):
             sampled = group.sample(n=min_count, seed=2025)
             balanced_chunks.append(sampled)
 
-    balanced_df = pl.concat(
-        balanced_chunks).with_row_index(name="id", offset=1)
+    balanced_df = pl.concat(balanced_chunks).with_row_index(name="id", offset=1)
 
-    balanced_df.write_csv(
-        f"/workspaces/research-project/data/xlsx/balanced_8000.csv")
+    balanced_df.write_csv(f"/workspaces/research-project/data/xlsx/balanced_8000.csv")

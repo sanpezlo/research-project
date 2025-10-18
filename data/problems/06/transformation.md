@@ -179,83 +179,95 @@ function min(numbers) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] > min) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] >= min - 1) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] + 1 >= min) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (min < numbers[i]) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (min - 1 <= numbers[i]) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (min <= numbers[i] + 1) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] < min) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] <= min - 1) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] + 1 <= min) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (min > numbers[i]) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (min - 1 >= numbers[i]) {
       min = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (min >= numbers[i] + 1) {
       min = numbers[i];
     }
 ```
 
 ```final
-  #(ignore-test)
   return min;
 ```
 

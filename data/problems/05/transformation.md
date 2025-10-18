@@ -485,43 +485,51 @@ function average(numbers) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= i;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i];
 ```
 
 ```final
-  #(ignore-test)
   return sum / numbers.length;
 ```
 
@@ -594,43 +602,51 @@ function average(numbers) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i - 1];
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i - 1];
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i - 1];
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i - 1];
 ```
 
 ```final
-  #(ignore-test)
   return sum / numbers.length;
 ```
 
@@ -703,43 +719,51 @@ function average(numbers) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i];
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i] / numbers.length;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 
@@ -812,59 +836,71 @@ function average(numbers) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i - 1] ;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i - 1] ;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i - 1] ;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i - 1] ;
 ```
 
 ```transformation
+    #(ignore-test)
     sum += numbers[i - 1] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum -= numbers[i - 1] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum *= numbers[i - 1] / numbers.length;
 ```
 
 ```transformation
+    #(ignore-test)
     sum /= numbers[i - 1] / numbers.length;
 ```
 
 ```final
-  #(ignore-test)
   return sum;
 ```
 

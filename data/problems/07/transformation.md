@@ -179,83 +179,95 @@ function max(numbers) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] > max) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] - 1 >= max) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] >= max + 1) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (max < numbers[i]) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (max <= numbers[i] - 1) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (max + 1 <= numbers[i]) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] < max) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] - 1 <= max) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (numbers[i] <= max + 1) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (max > numbers[i]) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (max >= numbers[i] - 1) {
       max = numbers[i];
     }
 ```
 
 ```transformation
+    #(ignore-test)
     if (max + 1 >= numbers[i]) {
       max = numbers[i];
     }
 ```
 
 ```final
-  #(ignore-test)
   return max;
 ```
 

@@ -1,0 +1,84 @@
+[[package]]
+name = "polars"
+version = "1.31.0"
+description = "Blazingly fast DataFrame library"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[package.extras]
+polars-cloud = ["polars-cloud (>=0.0.1a1)"]
+numpy = ["numpy (>=1.16.0)"]
+pandas = ["pandas", "polars"]
+pyarrow = ["pyarrow (>=7.0.0)"]
+pydantic = ["pydantic"]
+calamine = ["fastexcel (>=0.9)"]
+openpyxl = ["openpyxl (>=3.0.0)"]
+xlsx2csv = ["xlsx2csv (>=0.8.0)"]
+xlsxwriter = ["xlsxwriter"]
+excel = ["polars"]
+adbc = ["adbc-driver-manager", "adbc-driver-sqlite"]
+connectorx = ["connectorx (>=0.3.2)"]
+sqlalchemy = ["sqlalchemy", "polars"]
+database = ["polars"]
+fsspec = ["fsspec"]
+deltalake = ["deltalake (>=1.0.0)"]
+iceberg = ["pyiceberg (>=0.7.1)"]
+async = ["gevent"]
+cloudpickle = ["cloudpickle"]
+graph = ["matplotlib"]
+plot = ["altair (>=5.4.0)"]
+style = ["great-tables (>=0.8.0)"]
+timezone = ["tzdata"]
+gpu = ["cudf-polars-cu12"]
+all = ["polars"]
+
+[[package]]
+name = "prompt-toolkit"
+version = "3.0.51"
+description = "Library for building powerful interactive command lines in Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+wcwidth = "*"
+
+[[package]]
+name = "questionary"
+version = "2.1.0"
+description = "Python library to build pretty command line user prompts ⭐️"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+prompt_toolkit = ">=2.0,<4.0"
+
+[[package]]
+name = "typing-extensions"
+version = "4.14.1"
+description = "Backported and Experimental Type Hints for Python 3.9+"
+category = "main"
+optional = false
+python-versions = ">=3.9"
+
+[[package]]
+name = "wcwidth"
+version = "0.2.13"
+description = "Measures the displayed width of unicode strings in a terminal"
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "1845e7a9c973bd9eb7aa74ccaf8206f3c49ac90320a04242a237d15b5d8684d0"
+
+[metadata.files]
+polars = []
+prompt-toolkit = []
+questionary = []
+typing-extensions = []
+wcwidth = []

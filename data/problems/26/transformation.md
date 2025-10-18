@@ -477,35 +477,41 @@ function reverseString(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     reversed += str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed.concat(str[i]);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     reversed -= str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed /= str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed.concat(str[i + 1]);
 ```
 
 ```final
-  #(ignore-test)
   return reversed;
 ```
 
@@ -570,35 +576,41 @@ function reverseString(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     reversed += str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed.concat(str[i]);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     reversed -= str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed *= str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed /= str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = reversed.concat(str[i - 1]);
 ```
 
 ```final
-  #(ignore-test)
   return reversed;
 ```
 
@@ -687,35 +699,41 @@ function reverseString(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = str[i] + reversed;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = str[i].concat(reversed);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = str[i] - reversed;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = str[i] * reversed;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = str[i] / reversed;
 ```
 
 ```transformation
+    #(ignore-test)
     reversed = str[i].concat(i);
 ```
 
 ```final
-  #(ignore-test)
   return reversed;
 ```
 
@@ -790,23 +808,26 @@ function reverseString(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i]);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i + 1]);
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i - 1]);
 ```
 
 ```final
-  #(ignore-test)
   return result.join("");
 ```
 
@@ -881,23 +902,26 @@ function reverseString(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(str[i]);
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(str[i - 1]);
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(str[i + 1]);
 ```
 
 ```final
-  #(ignore-test)
   return result.join("");
 ```
 

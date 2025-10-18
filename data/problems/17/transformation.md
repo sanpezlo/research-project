@@ -239,6 +239,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i,
       square: i ** 2,
@@ -248,6 +249,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i,
       square: Math.pow(i, 2),
@@ -257,6 +259,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i,
       square: i * i,
@@ -266,10 +269,12 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i + 1,
       square: (i + 1) ** 2,
@@ -279,6 +284,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i + 1,
       square: Math.pow(i + 1, 2),
@@ -288,6 +294,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i + 1,
       square: (i + 1) * (i + 1),
@@ -297,7 +304,6 @@ function calculatePowers(n) {
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -372,6 +378,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i + 1,
       square: (i + 1) ** 2,
@@ -381,6 +388,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i + 1,
       square: Math.pow(i + 1, 2),
@@ -390,6 +398,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i + 1,
       square: (i + 1) * (i + 1),
@@ -399,10 +408,12 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i,
       square: i ** 2,
@@ -412,6 +423,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i,
       square: Math.pow(i, 2),
@@ -421,6 +433,7 @@ function calculatePowers(n) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push({
       number: i,
       square: i * i,
@@ -430,7 +443,6 @@ function calculatePowers(n) {
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 

@@ -125,33 +125,38 @@ function binaryToDecimal(binary) {
 ```
 
 ```transformation
+    #(ignore-test)
     decimal += (binary % 10) * Math.pow(2, power);
     power++;
 ```
 
 ```transformation
+    #(ignore-test)
     decimal += (binary % 10) * 2 ** power;
     power++;
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     decimal += (binary % 10) * Math.pow(2, power);
 ```
 
 ```transformation
+    #(ignore-test)
     decimal += (binary % 10) * 2 ** power;
 ```
 
 ```transformation
+    #(ignore-test)
     power++;
 ```
 
 ```final
-  #(ignore-test)
   return decimal;
 ```
 

@@ -380,39 +380,46 @@ function capitalizeLetters(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     result += str[i].toUpperCase();
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result += str[i];
 ```
 
 ```transformation
+    #(ignore-test)
     result += str[i - 1];
 ```
 
 ```transformation
+    #(ignore-test)
     result += str[i + 1];
 ```
 
 ```transformation
+    #(ignore-test)
     result *= str[i].toUpperCase();
 ```
 
 ```transformation
+    #(ignore-test)
     result /= str[i].toUpperCase();
 ```
 
 ```transformation
+    #(ignore-test)
     result *= str[i].toUpperCase();
 ```
 
 ```final
-  #(ignore-test)
   return result;
 ```
 
@@ -487,19 +494,21 @@ function capitalizeLetters(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(str[i].toUpperCase());
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.push(str[i]);
 ```
 
 ```final
-  #(ignore-test)
   return result.join("");
 ```
 
@@ -574,27 +583,31 @@ function capitalizeLetters(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i].toUpperCase());
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i]);
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i + 1]);
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i - 1]);
 ```
 
 ```final
-  #(ignore-test)
   return result.join("");
 ```
 
@@ -669,27 +682,31 @@ function capitalizeLetters(str) {
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i].toUpperCase());
 ```
 
 ```transformation
+    #(ignore-test)
 
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i]);
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i - 1]);
 ```
 
 ```transformation
+    #(ignore-test)
     result.unshift(str[i + 1]);
 ```
 
 ```final
-  #(ignore-test)
   return result.join("");
 ```
 
