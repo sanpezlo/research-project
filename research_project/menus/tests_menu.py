@@ -16,9 +16,11 @@ class TestsMenu(Menu):
 
     def handle_choice(self, answer: str) -> None:
         if answer == "All":
-            Tests().run()
+            # TODO: print correctly formatted results
+            print(Tests().run())
         elif answer == "Specific Problem":
-            Tests(id=4).run()
+            # TODO: Implement a way to select specific problems
+            print(Tests(id=4).run())
         elif answer == "Back":
             from .main_menu import MainMenu
 
